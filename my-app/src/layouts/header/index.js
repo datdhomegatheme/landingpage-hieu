@@ -16,7 +16,6 @@ function Index() {
               <a href={"#"} role={"button"} aria-haspopup="true" aria-expanded="false">
                 Home
               </a>
-              <div className={"nav-item-arrow"}></div>
               <div className={"submenu-arrow"}></div>
               <ul className={"submenu"}>
                 <li className={"submenu-item"}>
@@ -28,6 +27,7 @@ function Index() {
                 </li>
               </ul>
             </li>
+            <div className={"nav-item-arrow"}></div>
             <li className={"nav-item"}>
               <a href={"#"}>About</a>
             </li>
