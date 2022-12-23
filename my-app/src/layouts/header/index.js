@@ -1,62 +1,91 @@
 import React from "react";
 import "../../assets/Styles/header/index.scss";
 import { images } from "../../assets/images";
-function Index() {
+import MenuItems from "./menuItems/index";
+
+const Items = [
+  {
+    title: "Home",
+    to: "/home",
+    submenus: [
+      {
+        title: "Demo Template 1",
+        to: "/demo1",
+      },
+      {
+        title: "Demo Template 2",
+        to: "/demo2",
+      },
+    ],
+  },
+  {
+    title: "About",
+    to: "/About",
+  },
+  {
+    title: "Features",
+    to: "/features",
+  },
+  {
+    title: "Pricing",
+    to: "/pricing",
+  },
+  {
+    title: "Screenshots",
+    to: "/screenshots",
+  },
+  {
+    title: "Pages",
+    to: "/pages",
+    submenus: [
+      {
+        title: "Login",
+        to: "/login",
+      },
+      {
+        title: "Logout",
+        to: "/logout",
+      },
+    ],
+  },
+  {
+    title: "Blog",
+    to: "/blog",
+    submenus: [
+      {
+        title: "Grip",
+        to: "/grip",
+      },
+      {
+        title: "Sidebar",
+        to: "/sidebar",
+      },
+    ],
+  },
+  {
+    title: "Team",
+    to: "/team",
+  },
+  {
+    title: "Contact",
+    to: "contact",
+  },
+];
+
+function Header() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
+        <div className="navbar__container d-flex">
           {/*logo*/}
-          <a href={"#"} className="navbar-brand">
-            <img src={images.logo} className={"logo-img"} alt={"logo"} />
+          <a href={"#"} alt={"logo"} className="navbar__brand">
+            <img src={images.logo} className={"logo"} alt={"logo"} />
           </a>
-          {/*menu item*/}
-          <ul className={"navbar-nav"}>
-            <li class={"nav-item"}>
-              <a href={"#"} role={"button"} aria-haspopup="true" aria-expanded="false">
-                Home
-              </a>
-              <div className={"submenu-arrow"}></div>
-              <ul className={"submenu"}>
-                <li className={"submenu-item"}>
-                  <a href={"#"}>submmenu 1</a>
-                </li>
-                <li className={"submenu-item"}>
-                  {" "}
-                  <a href={"#"}>submmenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <div className={"nav-item-arrow"}></div>
-            <li className={"nav-item"}>
-              <a href={"#"}>About</a>
-            </li>
-            <li className={"nav-item"}>
-              <a href={"#"}>Features</a>
-            </li>
-            <li className={"nav-item"}>
-              <a href={"#"}>Pricing</a>
-            </li>
-            <li className={"nav-item"}>
-              <a href={"#"}>Screenshots</a>
-            </li>
-            <li className={"nav-item dropdown"}>
-              <a href={"#"}>Pages</a>
-            </li>
-            <li className={"nav-item dropdown"}>
-              <a href={"#"}>Blog</a>
-            </li>
-            <li className={"nav-item dropdown"}>
-              <a href={"#"}>Team</a>
-            </li>
-            <li className={"nav-item dropdown"}>
-              <a href={"#"}>Contact</a>
-            </li>
-          </ul>
+          <MenuItems items={Items} />
         </div>
       </nav>
     </>
   );
 }
 
-export default Index;
+export default Header;
