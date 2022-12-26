@@ -51,7 +51,7 @@
   position: absolute;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   visibility: hidden;
-  transition: 0.1s;
+  transition: 0.05s;
   top: 35px;
 }
 .navbar .navbar__menu-items .menu-items__item .item__submenu a {
