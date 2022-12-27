@@ -31,26 +31,37 @@
 
 
 
+            form {
+                position: relative;
 
-            .left__input-subcribe {
-                height: 20px;
-                border: transparent solid 1px;
-                width: 250px;
-                background: #FDFCFB;
-                color: #737373;
-                letter-spacing: 1px;
-                text-indent: 5%;
-                border-radius: 30px;
-                border-color: #ebebeb;
-                padding: 0.975rem 0.85rem;
+                .left__input-subscribe {
+                    position: relative;
+                    height: 20px;
+                    border: transparent solid 1px;
+                    width: 250px;
+                    background: #FDFCFB;
+                    color: #737373;
+                    letter-spacing: 1px;
+                    text-indent: 5%;
+                    border-radius: 30px;
+                    border-color: #ebebeb;
+                    padding: 0.975rem 0.85rem;
+                }
+
+                .left__btn-subscribe {
+                    position: relative;
+                    left: -87px;
+                    width: 84px;
+                    height: 47px;
+
+                }
+
             }
 
-            .left__btn-subcribe {
-                position: absolute;
-                width: 84px;
-                height: 45px;
+            .icon {
+                width: 23px;
+                height: 23px;
             }
-
 
 
 

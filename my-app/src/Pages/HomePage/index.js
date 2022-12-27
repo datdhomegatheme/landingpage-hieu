@@ -1,6 +1,7 @@
 import Images from "../../Assets/Images";
 // import "../../Assets/Styles/HomePage/_index.scss";
 import Img from "../../Assets/Images/HomePage/hero-bg-shape-1.svg";
+import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 
 function HomePage() {
     return (
@@ -19,17 +20,19 @@ function HomePage() {
                         <form className="d-flex">
                             <input
                                 type={"text"}
-                                className={"left__input-subcribe"}
+                                className={"left__input-subscribe"}
                                 name="email"
                                 id="email"
                                 placeholder="info@yourdomain.com"
                             ></input>
-                            <button className="left__btn-subcribe btn">
-                                Subcribe
+                            <button className="left__btn-subscribe btn">
+                                Subscribe
                             </button>
                         </form>
                         <div>
-                            <button />
+                            <a href="https://www.youtube.com/watch?v=9No-FiEInLA">
+                                <PlayArrowOutlinedIcon className="icon" />
+                            </a>
                             <div>Watch Video Overview</div>
                         </div>
                     </div>
