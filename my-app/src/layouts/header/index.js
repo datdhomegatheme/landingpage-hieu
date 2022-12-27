@@ -1,5 +1,5 @@
 import React from "react";
-import { images } from "../../assets/images";
+import Images from "../../Assets/Images";
 import MenuItems from "./MenuItems/index";
 
 const Items = [
@@ -14,6 +14,7 @@ const Items = [
             {
                 title: "Demo Template 2",
                 to: "/demo2",
+                new: true,
             },
         ],
     },
@@ -50,6 +51,7 @@ const Items = [
     {
         title: "Blog",
         to: "/blog",
+        new: true,
         submenus: [
             {
                 title: "Grip",
@@ -77,7 +79,7 @@ function Header() {
             <nav className="navbar d-flex ">
                 {/*logo*/}
                 <a href={"/#"} alt={"logo"}>
-                    <img src={images.logo} className={"logo "} alt={"logo"} />
+                    <img src={Images.logo} className={"logo "} alt={"logo"} />
                 </a>
                 <MenuItems items={Items} />
             </nav>

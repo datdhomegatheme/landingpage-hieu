@@ -40,15 +40,31 @@ $navbar-bg-color: linear-gradient(to right,
                 display: block;
                 text-decoration: none;
                 opacity: 0.8;
+
+                .item__arrow {
+                    position: absolute;
+                    top: -3px;
+                    color: white;
+                    object-fit: contain;
+                    width: 18px;
+                    opacity: 0.8;
+                }
+
+
+                &:focus {
+                    color: black;
+
+                    .item__arrow {
+                        color: black;
+                    }
+                }
+
             }
 
-            .item__arrow {
-                color: white;
-                object-fit: contain;
-                width: 18px;
-                opacity: 0.8;
 
-            }
+
+
+
 
             .item__submenu-arrow {
                 position: absolute;
@@ -84,16 +100,51 @@ $navbar-bg-color: linear-gradient(to right,
                 .submenu__submenu-item {
                     padding: 7px 15px;
 
+                    .submenu-item__new {
+                        position: absolute;
+                        top: 36px;
+                        right: 83px;
+                        background-color: #ffc107;
+                        line-height: 19px;
+                        width: 39px;
+                        height: 19px;
+                        color: black;
+                        border-radius: 6px;
+                        text-align: center;
+                        opacity: 0.8;
+
+                    }
+
                     &:hover {
+                        opacity: 1;
                         background: #ebebeb;
                     }
+
+
                 }
+
+
+            }
+
+            .item__new {
+                position: absolute;
+                top: -16px;
+                right: -6px;
+                background-color: #dc3545;
+                width: 46px;
+                height: 16px;
+                color: white;
+                border-radius: 800px;
+                text-align: center;
+                padding-top: 2px;
+                opacity: 0.8;
             }
 
             &:hover {
 
                 a,
-                .item__arrow {
+                .item__arrow,
+                .item__new {
                     opacity: 1;
                 }
 
@@ -103,6 +154,9 @@ $navbar-bg-color: linear-gradient(to right,
                     visibility: visible;
                 }
             }
+
+
+
         }
     }
 

@@ -1,10 +1,10 @@
 import React from "react";
-import Index from "./layouts/Header";
+import Header from "./Layouts/Header";
 
 function App() {
     return (
         <div className="App">
-            <Index />
+            <Header />
             <div>content</div>
         </div>
     );

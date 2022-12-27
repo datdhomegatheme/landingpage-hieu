@@ -8,13 +8,25 @@ function MenuItems({ items = [] }) {
             {items.map((item, index) => (
                 <>
                     <li key={index} className={"menu-items__item d-flex"}>
-                        <a href={item.to} alt={"link nav item"} role={"button"}>
-                            {item.title}
+                        <a
+                            href={item.to}
+                            className="title"
+                            alt={"link nav item"}
+                            role={"button"}
+                        >
+                            <>
+                                {item.title}
+                                {item.submenus && (
+                                    <ArrowDropDownIcon className="item__arrow" />
+                                )}
+                            </>
                         </a>
+                        {item.new && (
+                            <span className="item__new chip-font">New</span>
+                        )}
                         {/*render submenu*/}
                         {item.submenus && (
                             <>
-                                <ArrowDropDownIcon className="item__arrow" />
                                 <div className={"item__submenu-arrow"}></div>
                                 <ul className={"item__submenu"}>
                                     {item.submenus?.map((submenu, index) => (
@@ -31,6 +43,11 @@ function MenuItems({ items = [] }) {
                                                 >
                                                     {submenu.title}
                                                 </a>
+                                                {submenu.new && (
+                                                    <span className="submenu-item__new chip-font">
+                                                        New
+                                                    </span>
+                                                )}
                                             </li>
                                         </>
                                     ))}
