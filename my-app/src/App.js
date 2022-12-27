@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./Layouts/Header";
+import HomePage from "./Pages/HomePage";
 
 function App() {
     return (
         <div className="App">
             <Header />
-            <div>content</div>
+            <HomePage />
         </div>
     );
 }

@@ -1,0 +1,15 @@
+//global variables
+$font-weight: 400;
+$font-size: 16px;
+$z-index-default: 1;
+$z-index-bg-img: -1;
+
+//header variables
+$z-index-header: 5;
+$navbar-height: 70.5px;
+$navbar-bg-color: linear-gradient(to right,
+                rgba(32, 40, 119, 1),
+                rgba(55, 46, 149, 1),
+                rgba(83, 49, 177, 1),
+                rgba(114, 48, 205, 1),
+                rgba(150, 41, 230, 1));

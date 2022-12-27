@@ -1,16 +1,16 @@
 // set variables
+@import '../Variables';
 
+// .navbar-transparent {
+//     background-color: transparent !important;
+// }
 
-$z-index-header: 1;
-$navbar-height: 70.5px;
-$navbar-bg-color: linear-gradient(to right,
-        rgba(32, 40, 119, 1),
-        rgba(55, 46, 149, 1),
-        rgba(83, 49, 177, 1),
-        rgba(114, 48, 205, 1),
-        rgba(150, 41, 230, 1));
-
+// .navbar-color {
+//     background-color: $navbar-bg-color;
+// }
 .navbar {
+    position: sticky;
+    top: 0;
     width: 100%;
     justify-content: space-around !important;
     height: $navbar-height;
@@ -29,8 +29,8 @@ $navbar-bg-color: linear-gradient(to right,
 
         .menu-items__item {
             padding: 0 8px;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: $font-weight;
+            font-size: $font-size;
             margin-left: 20px;
             position: relative;
 
@@ -154,8 +154,6 @@ $navbar-bg-color: linear-gradient(to right,
                     visibility: visible;
                 }
             }
-
-
 
         }
     }
