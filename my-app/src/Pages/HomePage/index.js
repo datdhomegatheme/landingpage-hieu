@@ -29,7 +29,7 @@ function HomePage() {
                                 Subscribe
                             </button>
                         </form>
-                        <div>
+                        <div className="left__play-btn d-flex">
                             <a href="https://www.youtube.com/watch?v=9No-FiEInLA">
                                 <PlayArrowOutlinedIcon className="icon" />
                             </a>
