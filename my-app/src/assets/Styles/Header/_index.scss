@@ -62,16 +62,13 @@
             }
 
 
-
-
-
-
             .item__submenu-arrow {
                 position: absolute;
                 pointer-events: none;
                 border: 12px solid transparent;
                 border-bottom: 12px solid #fff;
                 top: 11px;
+                left: 33px;
                 visibility: hidden;
                 transition: 0.08s;
             }
@@ -86,6 +83,7 @@
                 visibility: hidden;
                 transition: 0.08s;
                 top: 35px;
+                left: -78px;
 
                 a {
                     color: #363232;
