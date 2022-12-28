@@ -8,7 +8,7 @@ function HomePage() {
         <>
             <div className="home">
                 <div className="home__container d-flex">
-                    <div className="container__left">
+                    <div className="container__left d-flex">
                         <h1 className="left__title">
                             Brainstorming for Desired Usability
                         </h1>
@@ -36,12 +36,12 @@ function HomePage() {
                             <div>Watch Video Overview</div>
                         </div>
                     </div>
-                    <div className="container__right">
-                        {/* <img
+                    <div className="container__right d-flex">
+                        <img
                             alt="app"
                             src={Images.AppImg}
-                            className="right__app-img"
-                        /> */}
+                            className="right__app-img "
+                        />
                     </div>
                 </div>
                 <div className="bottom">

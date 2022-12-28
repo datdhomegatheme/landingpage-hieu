@@ -1,21 +1,32 @@
 // set variables
 @import '../Variables';
 
-// .navbar-transparent {
-//     background-color: transparent !important;
-// }
+@media (max-width: 992px) {
+    .navbar {
+        background: #202877 !important;
+        transition: all .3s ease-in-out;
+    }
 
-// .navbar-color {
-//     background-color: $navbar-bg-color;
-// }
+    .navbar__toggler {
+        display: flex !important;
+    }
+
+    .navbar__menu-items {
+        display: none !important;
+    }
+}
+
+
+
 .navbar {
     position: sticky;
     top: 0;
     width: 100%;
     justify-content: space-around !important;
     height: $navbar-height;
-    background-image: $navbar-bg-color;
+    background: transparent;
     z-index: $z-index-header;
+    transition: all .3s ease-in-out;
 
     .logo {
         width: 120px;
@@ -153,6 +164,19 @@
                 }
             }
 
+        }
+    }
+
+    .navbar__toggler {
+        display: none;
+        border: 0.1px solid rgba(0, 0, 0, 0.1);
+        width: 45px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: transparent;
+
+        .toggler__icon {
+            color: #e6d5f7;
         }
     }
 

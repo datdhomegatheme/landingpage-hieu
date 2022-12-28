@@ -1,6 +1,7 @@
 import React from "react";
 import Images from "../../Assets/Images";
 import MenuItems from "./MenuItems/index";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Items = [
     {
@@ -76,12 +77,15 @@ const Items = [
 function Header() {
     return (
         <>
-            <nav className="navbar d-flex ">
+            <nav id="nav" className="navbar d-flex ">
                 {/*logo*/}
                 <a href={"/#"} alt={"logo"}>
                     <img src={Images.logo} className={"logo "} alt={"logo"} />
                 </a>
                 <MenuItems items={Items} />
+                <button className="navbar__toggler d-flex" type="button">
+                    <MenuIcon className="toggler__icon" />
+                </button>
             </nav>
         </>
     );
