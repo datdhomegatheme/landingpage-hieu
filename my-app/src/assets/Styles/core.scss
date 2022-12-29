@@ -24,6 +24,10 @@ ul {
   padding-inline-end: 0;
 }
 
+ul li a {
+  transition: 0.3s;
+}
+
 .bg-color {
   background-image: $navbar-bg-color !important;
 }
