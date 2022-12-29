@@ -24,12 +24,17 @@ ul {
   padding-inline-end: 0;
 }
 
-ul li a {
-  transition: 0.3s;
+a {
+  text-decoration: none;
 }
 
 .bg-color {
   background-image: $navbar-bg-color !important;
+}
+
+.transition-hide {
+  visibility: hidden;
+  transition: 0.08s;
 }
 
 

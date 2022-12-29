@@ -27,8 +27,12 @@ function MenuItems({ items = [] }) {
                         {/*render submenu*/}
                         {item.submenus && (
                             <>
-                                <div className={"item__submenu-arrow"}></div>
-                                <ul className={"item__submenu"}>
+                                <div
+                                    className={
+                                        "item__submenu-arrow transition-hide"
+                                    }
+                                ></div>
+                                <ul className={"item__submenu transition-hide"}>
                                     {item.submenus?.map((submenu, index) => (
                                         <>
                                             <li
@@ -40,6 +44,7 @@ function MenuItems({ items = [] }) {
                                                 <a
                                                     alt={"link submenu item"}
                                                     href={submenu.to}
+                                                    className={"sub-title"}
                                                 >
                                                     {submenu.title}
                                                 </a>
