@@ -29,8 +29,14 @@ function MenuItems({ items = [] }) {
                         {/*render submenu*/}
                         {item.submenus && (
                             <>
-                                <div className={"item__submenu-arrow"}></div>
-                                <ul className={"item__submenu"}>
+                                <div
+                                    className={
+                                        "item__submenu-arrow dropdown-element"
+                                    }
+                                ></div>
+                                <ul
+                                    className={"item__submenu dropdown-element"}
+                                >
                                     {item.submenus?.map((submenu, index) => (
                                         <>
                                             <li

@@ -16,6 +16,11 @@
     }
 }
 
+// animation of submenu
+.dropdown-element {
+    visibility: hidden;
+    transition-delay: 0.1s;
+}
 
 
 .navbar {
@@ -65,7 +70,7 @@
                     border-radius: 800px;
                     text-align: center;
                     padding-top: 2px;
-                    opacity: 0.8;
+
                 }
 
                 .item__arrow {
@@ -103,8 +108,6 @@
                 border-bottom: 12px solid #fff;
                 top: 11px;
                 left: 33px;
-                visibility: hidden;
-                transition-delay: 0.1s;
 
             }
 
@@ -118,8 +121,6 @@
                 box-shadow: 0 2px 8px rgb(0 0 0/ 12%);
                 top: 35px;
                 left: -78px;
-                visibility: hidden;
-                transition-delay: 0.1s;
 
 
                 .sub-title {
