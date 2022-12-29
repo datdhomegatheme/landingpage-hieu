@@ -28,6 +28,7 @@
         justify-content: space-between;
         position: relative;
         z-index: 1;
+        line-height: 30px;
 
         .container__left {
             width: 37%;
@@ -43,13 +44,19 @@
                     height: 26px;
                     width: 312px;
                     border: transparent solid 1px;
-                    background: #FDFCFB;
-                    color: #737373;
+
                     letter-spacing: 1px;
                     text-indent: 5%;
                     border-radius: 30px;
-                    border-color: #ebebeb;
-                    padding: 0.975rem 0.85rem;
+                    padding: 16px 16px;
+
+                    &:focus-visible {
+                        border: 1px solid #6730e3;
+                    }
+
+                    &::placeholder {
+                        opacity: 0.5;
+                    }
                 }
 
                 .left__btn-subscribe {
@@ -58,24 +65,40 @@
                     width: 98px;
                     height: 46px;
                 }
-
             }
 
-            .left__play-btn {
-                width: 50px;
-                height: 50px;
-                line-height: 50px;
-                border-radius: 50%;
-                position: relative;
-                z-index: 4;
-                display: inline-block;
-                border: 2px solid #ffffff;
-                cursor: pointer;
-                background: #ffffff;
+            .left__play-video {
+                padding: 20px 0;
 
-                .icon {
-                    width: 40px;
-                    height: 40px;
+
+                .play-btn {
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    z-index: 4;
+                    border: 2px solid #ffffff;
+                    cursor: pointer;
+                    background: #ffffff;
+
+                    .icon {
+                        color: #0d6efd;
+                        font-size: 40px;
+                    }
+
+                    &:hover {
+                        animation: ripple-white 1s linear infinite;
+                        transition: .5s;
+                        background-color: #9629e6;
+
+                        .icon {
+                            color: white;
+                        }
+                    }
+                }
+
+                .play-video__title {
+                    padding: 0 15px;
                 }
             }
 
@@ -106,4 +129,16 @@
 
     }
 
+}
+
+@keyframes ripple-white {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgb(255 255 255 / 10%), 0 0 0 10px rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%);
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 10%), 0 0 0 10px rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 10px rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 0%);
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 10%), 0 0 0 20px rgb(255 255 255 / 10%), 0 0 0 30px rgb(255 255 255 / 0%);
+    }
 }

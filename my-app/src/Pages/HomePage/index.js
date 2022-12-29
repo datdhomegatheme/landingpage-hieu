@@ -12,11 +12,11 @@ function HomePage() {
                         <h1 className="left__title">
                             Brainstorming for Desired Usability
                         </h1>
-                        <p className="left__content text-content ">
+                        <h2 className="left__content">
                             Our design projects are fresh and simple and will
                             benefit your business greatly. Learn more about our
                             work!
-                        </p>
+                        </h2>
                         <form className="d-flex">
                             <input
                                 type={"text"}
@@ -29,11 +29,16 @@ function HomePage() {
                                 Subscribe
                             </button>
                         </form>
-                        <div className="left__play-btn d-flex">
-                            <a href="https://www.youtube.com/watch?v=9No-FiEInLA">
+                        <div className="left__play-video d-flex">
+                            <a
+                                className="play-btn d-flex"
+                                href="https://www.youtube.com/watch?v=9No-FiEInLA"
+                            >
                                 <PlayArrowOutlinedIcon className="icon" />
                             </a>
-                            <div>Watch Video Overview</div>
+                            <p className="play-video__title">
+                                Watch Video Overview
+                            </p>
                         </div>
                     </div>
                     <div className="container__right d-flex">
@@ -48,6 +53,7 @@ function HomePage() {
                     <img alt="bottom img" src={Img} className="bottom__img" />
                 </div>
             </div>
+            <div className="promp-section"></div>
         </>
     );
 }
