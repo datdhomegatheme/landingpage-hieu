@@ -19,20 +19,18 @@ function MenuItems({ items = [] }) {
                                 {item.submenus && (
                                     <ArrowDropDownIcon className="item__arrow" />
                                 )}
+                                {item.new && (
+                                    <span className="item__new chip-font">
+                                        New
+                                    </span>
+                                )}
                             </>
                         </a>
-                        {item.new && (
-                            <span className="item__new chip-font">New</span>
-                        )}
                         {/*render submenu*/}
                         {item.submenus && (
                             <>
-                                <div
-                                    className={
-                                        "item__submenu-arrow transition-hide"
-                                    }
-                                ></div>
-                                <ul className={"item__submenu transition-hide"}>
+                                <div className={"item__submenu-arrow"}></div>
+                                <ul className={"item__submenu"}>
                                     {item.submenus?.map((submenu, index) => (
                                         <>
                                             <li
