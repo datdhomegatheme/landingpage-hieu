@@ -53,7 +53,6 @@ function HomePage() {
                     <img alt="bottom img" src={Img} className="bottom__img" />
                 </div>
             </div>
-            <div className="promp-section"></div>
         </>
     );
 }
