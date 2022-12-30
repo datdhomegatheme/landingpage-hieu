@@ -13,29 +13,46 @@
         line-height: 30px;
         flex-direction: column;
 
-        h1,
-        h2 {
-            text-align: center;
+        .promo__title {
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            h2 {
+                width: 747px;
+                height: 69px;
+            }
         }
 
-        h2 {
-            width: 747px;
-            height: 69px;
-            color: #707070;
-        }
 
         .promo__content {
             .content__bg {
-                width: 317px;
-                height: 205px;
+                width: 320px;
+                height: 200px;
                 padding: 45px;
                 margin: 10px;
                 box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
                 border-radius: 1.5rem;
+                text-align: center;
+
+                .bg-icon {
+                    font-size: 35px;
+                    background-image: $bg-promo;
+                    background-size: 150px;
+                    padding: 35px;
+                    background-repeat: no-repeat;
+                    background-position: 50% 20%;
+
+                    .promo-icon {
+                        font-size: 35px;
+                        color: white;
+                    }
+                }
             }
-
-
         }
-    }
 
+
+    }
 }
