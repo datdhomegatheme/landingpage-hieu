@@ -18,15 +18,15 @@ function SharePage() {
                         whereas adaptive schemas. Competently brand performance
                         based content and
                     </p>
-                    {aboutItems.map((item, index) => (
-                        <>
-                            <div key={index} className="right__content">
-                                <div className="about-icon">
+                    <div className="right__content">
+                        {aboutItems.map((item, index) => (
+                            <>
+                                <div key={index} className="about-icon">
                                     <img alt="about icon" src={item.icon} />
                                 </div>
-                            </div>
-                        </>
-                    ))}
+                            </>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

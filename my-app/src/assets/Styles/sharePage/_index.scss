@@ -15,10 +15,17 @@
         }
 
         .container__right {
-            margin-right: 100px;
+            margin-right: 123px;
+            line-height: 40px;
 
             .right__content {
-                flex-direction: column;
+                display: flex;
+                flex-direction: row;
+
+                .about-icon {
+                    border: 1px solid #dee2e6;
+                    margin-right: 30px;
+                }
             }
 
         }
