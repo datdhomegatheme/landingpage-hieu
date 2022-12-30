@@ -3,6 +3,9 @@
 @import 'header';
 @import 'homePage';
 @import 'promoPage';
+@import 'aboutPage';
+@import 'sharePage';
+
 
 
 body {
@@ -92,5 +95,36 @@ p {
     color: #202877;
     box-shadow: none;
     border: 2px solid #6730e3;
+  }
+}
+
+.container {
+  padding: 48px 0;
+  margin: 0px 265px;
+  height: 90%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  line-height: 30px;
+}
+
+
+// custom promo icon 
+.about-icon {
+  content: "";
+  position: relative;
+  z-index: $z-index-bg-img;
+  height: 65px;
+  width: 65px;
+  color: #9629e6;
+  text-align: center;
+  box-shadow: 0 4px 15px 0 rgb(52 27 159 / 10%);
+  border-radius: 4px;
+  background: #fff;
+
+  img {
+    width: 35px;
+    height: auto;
+    padding: 17px;
   }
 }

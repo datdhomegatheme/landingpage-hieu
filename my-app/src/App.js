@@ -3,7 +3,7 @@ import Header from "./layouts/Header";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import PromoPage from "./pages/PromoPage";
-
+import SharePage from "./pages/SharePage";
 function App() {
     const [scrollPosition, setScrollPosition] = useState();
     const handleScroll = () => {
@@ -28,14 +28,13 @@ function App() {
         };
     }, [scrollPosition > 70.5]);
 
-    // console.log(scrollPosition);
-    //function toggle className
     return (
         <div className="App">
             <Header />
             <HomePage />
             <PromoPage />
             <AboutPage />
+            <SharePage />
         </div>
     );
 }

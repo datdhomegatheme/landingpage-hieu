@@ -1,27 +1,6 @@
-import PolylineIcon from "@mui/icons-material/Polyline";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
-import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+import { promoItems } from "../../DataItems";
 
 function PromoPage() {
-    const promoItems = [
-        {
-            icon: <PolylineIcon className="promo-icon" />,
-            title: "Clean Design",
-            content: "Increase sales by showing true dynamics of your website.",
-        },
-        {
-            icon: <LockOutlinedIcon className="promo-icon" />,
-            title: "Secure Data",
-            content:
-                "Build your online store’s trust using Social Proof & Urgency.",
-        },
-        {
-            icon: <VisibilityOutlinedIcon className="promo-icon" />,
-            title: "Retina Ready",
-            content:
-                "Realize importance of social proof in customer’s purchase decision.",
-        },
-    ];
     return (
         <>
             <div className="promo">
