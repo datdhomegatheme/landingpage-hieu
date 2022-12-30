@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Layouts/Header";
-import HomePage from "./Pages/HomePage";
-import PromoPage from "./Pages/PromoPage";
+import Header from "./layouts/Header";
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import PromoPage from "./pages/PromoPage";
 
 function App() {
     const [scrollPosition, setScrollPosition] = useState();
@@ -34,6 +35,7 @@ function App() {
             <Header />
             <HomePage />
             <PromoPage />
+            <AboutPage />
         </div>
     );
 }

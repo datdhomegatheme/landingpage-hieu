@@ -8,14 +8,14 @@ $z-index-bg-img: -1;
 $z-index-header: 5;
 $navbar-height: 70.5px;
 $navbar-bg-color: linear-gradient(to right,
-                rgba(32, 40, 119, 1),
-                rgba(55, 46, 149, 1),
-                rgba(83, 49, 177, 1),
-                rgba(114, 48, 205, 1),
-                rgba(150, 41, 230, 1));
+        rgba(32, 40, 119, 1),
+        rgba(55, 46, 149, 1),
+        rgba(83, 49, 177, 1),
+        rgba(114, 48, 205, 1),
+        rgba(150, 41, 230, 1));
 
 
 //img:
-$bg-home: url("../../../Assets/Images/HomePage/app-hero-bg.jpg")no-repeat center center / cover;
+$bg-home: url("../../../assets/Images/homePage/app-hero-bg.jpg")no-repeat center center / cover;
 
-$bg-promo: url("../../../Assets/Images/PromoPage/promo-icon-bg.svg");
+$bg-promo: url("../../../assets/Images/promoPage/promo-icon-bg.svg");

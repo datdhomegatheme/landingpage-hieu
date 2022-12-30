@@ -1,6 +1,6 @@
-import Images from "../../Assets/Images";
+import Images from "../../assets/Images";
 // import "../../Assets/Styles/HomePage/_index.scss";
-import Img from "../../Assets/Images/HomePage/hero-bg-shape-1.svg";
+import Img from "../../assets/Images/homePage/hero-bg-shape-1.svg";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 
 function HomePage() {

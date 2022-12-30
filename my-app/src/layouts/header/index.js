@@ -1,6 +1,6 @@
 import React from "react";
-import Images from "../../Assets/Images";
-import MenuItems from "./MenuItems/index";
+import Images from "../../assets/Images";
+import MenuItems from "./MenuItems";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const Items = [
