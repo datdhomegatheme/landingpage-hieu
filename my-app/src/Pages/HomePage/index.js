@@ -7,8 +7,8 @@ function HomePage() {
     return (
         <>
             <div className="home">
-                <div className="home__container d-flex">
-                    <div className="container__left d-flex">
+                <div className="homePage__container d-flex">
+                    <div className="homePage__container__left d-flex">
                         <h1 className="left__title">
                             Brainstorming for Desired Usability
                         </h1>

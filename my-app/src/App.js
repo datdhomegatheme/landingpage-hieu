@@ -11,18 +11,21 @@ function App() {
         setScrollPosition(position);
     };
 
-    const togglerClass = () => {
-        const element = document.getElementById("nav");
+    const toggleClass = () => {
+        const elementNav = document.getElementById("navbar__container");
+        const elementNavCollapse = document.getElementById("navbar-collapse");
         if (scrollPosition > 70.5) {
-            element.classList.add("bg-color");
+            elementNav.classList.add("bg-color");
+            elementNavCollapse.classList.add("bg-color");
         } else {
-            element.classList.remove("bg-color");
+            elementNav.classList.remove("bg-color");
+            elementNavCollapse.classList.remove("bg-color");
         }
     };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, { passive: true });
-        togglerClass();
+        toggleClass();
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };

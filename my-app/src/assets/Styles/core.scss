@@ -1,12 +1,5 @@
 //core scss
 @import 'variables';
-@import 'header';
-@import 'homePage';
-@import 'promoPage';
-@import 'aboutPage';
-@import 'sharePage';
-
-
 
 body {
   margin: 0;
@@ -51,10 +44,9 @@ form {
   align-items: center;
 }
 
-
 .chip-font {
   font-weight: 700;
-  font-size: 11.2px;
+  font-size: 11px;
 }
 
 h1 {
@@ -128,3 +120,9 @@ p {
     padding: 16px;
   }
 }
+
+@import 'header';
+@import 'homePage';
+@import 'promoPage';
+@import 'aboutPage';
+@import 'sharePage';

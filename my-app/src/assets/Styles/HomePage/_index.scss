@@ -18,7 +18,7 @@
         height: 106vh;
     }
 
-    .home__container {
+    .homePage__container {
         padding: 48px 0;
         margin: 0px 265px;
         height: 90%;
@@ -27,7 +27,7 @@
         z-index: $z-index-default;
         line-height: 30px;
 
-        .container__left {
+        .homePage__container__left {
             width: 37%;
             color: white;
             flex-direction: column;
