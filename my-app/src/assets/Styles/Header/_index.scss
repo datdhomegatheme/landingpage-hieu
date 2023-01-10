@@ -12,13 +12,15 @@
 
     .navbar__container {
         background: transparent;
-        justify-content: space-around;
+        justify-content: space-between;
         height: $navbar-height;
+        padding: 0 256px;
         transition: all 0.4s ease-in-out;
 
         @media (max-width: 992px) {
             background: $navbar-bg-secondary;
             transition: all .4 ease-in-out;
+            padding: 0 20px;
         }
 
         .logo {
@@ -191,11 +193,7 @@
 
             .navbar__toggle {
                 display: flex;
-
-
             }
-
-
 
             .navbar__menu-items {
                 display: none;
@@ -207,7 +205,7 @@
 
     }
 
-    .navbar-collapse-none {
+    .navbar-collapse-hide {
         display: none;
     }
 
@@ -218,11 +216,123 @@
         background: $navbar-bg-secondary ;
         z-index: $z-index-header;
 
+        @media (min-width: 922px) {
+            display: none;
+        }
+
         ul {
+            padding: 0 20px;
+            font-size: 17px;
+            width: 100%;
+            line-height: 40px;
 
             li {
                 a {
-                    color: white;
+                    color: #ffffff;
+                    background-color: transparent;
+                    display: flex;
+                    position: relative;
+                    opacity: 0.8;
+                    transition: 0.8s;
+
+                    .navbar-collapse__items-arrow {
+                        position: inherit;
+                        top: -2px;
+                    }
+
+                    span {
+                        position: inherit;
+                        background-color: #dc3545;
+                        width: 48px;
+                        height: 16px;
+                        color: white;
+                        border-radius: 800px;
+                        text-align: center;
+                        padding-top: 4px;
+                        line-height: 10px;
+                    }
+
+
+
+                }
+
+                .item__submenu-arrow {
+                    display: none;
+                    position: relative;
+                    width: 1px;
+                    height: 1px;
+                    pointer-events: none;
+                    border: 12px solid transparent;
+                    border-bottom: 12px solid #fff;
+                    top: -16px;
+                    left: 19px;
+
+                }
+
+                .item__submenu {
+                    display: none;
+                    width: 248px;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+                    position: relative;
+                    box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+                    top: -16px;
+                    left: 4px;
+
+
+                    .sub-title {
+                        color: #363232;
+                        opacity: 0.8 !important;
+
+
+                    }
+
+                    .submenu__submenu-item {
+                        padding: 8px 16px;
+
+
+                        .submenu-item__new {
+                            position: absolute;
+                            top: 36px;
+                            right: 80px;
+                            background-color: #ffc107;
+                            line-height: 18px;
+                            width: 40px;
+                            height: 20px;
+                            color: black;
+                            border-radius: 8px;
+                            text-align: center;
+                            opacity: 0.8;
+
+                        }
+
+                        &:hover {
+                            background: #ebebeb;
+
+                            .sub-title {
+                                color: black;
+                            }
+
+                            .submenu-item__new {
+                                opacity: 1;
+                            }
+                        }
+
+
+
+                    }
+
+
+                }
+
+                &:hover {
+
+                    .item__submenu-arrow,
+                    .item__submenu {
+                        display: block;
+                        visibility: visible;
+                    }
                 }
             }
         }

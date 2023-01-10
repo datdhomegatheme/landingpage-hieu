@@ -40,7 +40,7 @@ function Header() {
                     </button>
                 </div>
                 {/*logo*/}
-                <MiniMenuItems />
+                <MiniMenuItems items={headerItems} />
             </nav>
         </>
     );
