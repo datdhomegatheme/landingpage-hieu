@@ -1,5 +1,7 @@
 import Images from "../../assets/Images";
 import Grid from "@mui/material/Grid";
+import AndroidIcon from "@mui/icons-material/Android";
+import AppleIcon from "@mui/icons-material/Apple";
 function DownloadPage() {
     return (
         <div className="download-page d-flex">
@@ -25,12 +27,14 @@ function DownloadPage() {
                                 Collaboratively.
                             </h2>
                             <div className="content__btn">
-                                <button className="btn google-play">
-                                    Google Play
-                                </button>
-                                <button className="btn app-store">
-                                    App Store
-                                </button>
+                                <a href="/#" className="btn google-play">
+                                    <AndroidIcon className="icon-android" />
+                                    <span>Google Play</span>
+                                </a>
+                                <a href="/#" className="btn app-store">
+                                    <AppleIcon className="icon-apple" />
+                                    <span>App Store</span>
+                                </a>
                             </div>
                         </div>
                     </Grid>
