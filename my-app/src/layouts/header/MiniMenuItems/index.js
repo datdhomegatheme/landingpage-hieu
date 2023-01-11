@@ -2,7 +2,6 @@ import React from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 function MiniMenuItems({ items = [] }) {
-    console.log(items);
     return (
         // render menu
         <div id={"navbar-collapse"} className={"navbar-collapse-hide"}>

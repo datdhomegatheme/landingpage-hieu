@@ -50,14 +50,13 @@
                     .item__new {
                         position: absolute;
                         top: -20px;
-                        right: -20px;
+                        right: -18px;
                         background-color: #dc3545;
                         width: 48px;
-                        height: 16px;
+                        height: 19px;
                         color: white;
                         border-radius: 800px;
                         text-align: center;
-                        padding-top: 4px;
 
                     }
 
@@ -327,7 +326,6 @@
                 }
 
                 &:hover {
-
                     .item__submenu-arrow,
                     .item__submenu {
                         display: block;

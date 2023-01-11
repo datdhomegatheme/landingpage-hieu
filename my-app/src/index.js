@@ -1,12 +1,17 @@
+import "./assets/styles/core.scss";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./assets/styles/core.scss";
 import App from "./App";
+
+import { AppProvider } from "@shopify/polaris";
+import en from "@shopify/polaris/locales/en.json";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <App />
+        <AppProvider i18n={en}>
+            <App />
+        </AppProvider>
     </React.StrictMode>
 );
 

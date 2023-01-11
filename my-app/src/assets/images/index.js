@@ -9,6 +9,7 @@ const Images = {
     iconChat: require(`./aboutPage/icon-chat.png`),
     iconMobile: require(`./aboutPage/icon-mobile.png`),
     iconMobile2: require(`./aboutPage/icon-mobile-2.png`),
+    appHandTop: require(`./downloadPage/app-hand-top.png`),
 };
 
 export default Images;
