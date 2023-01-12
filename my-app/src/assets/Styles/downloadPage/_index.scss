@@ -34,16 +34,16 @@
                     padding: 12px 30px;
                     font-family: 'Montserrat', sans-serif;
                     font-weight: 700;
-                    display: flex;
-                    align-items: center;
+
                 }
 
                 .google-play {
                     background: #ffffff;
                     border-color: #ffffff;
                     color: #6730e3;
-                    border-radius: 30px;
+
                     margin-right: 20px;
+
 
 
                     &:hover {
@@ -55,7 +55,7 @@
 
                 .app-store {
                     background: transparent;
-                    border-radius: 30px;
+
                     color: #ffffff;
                     border-color: #ffffff;
 
@@ -67,7 +67,16 @@
 
                 }
 
+                .app-store,
+                .google-play {
+                    svg {
+                        position: relative;
+                        top: 4px;
+                        right: 4px;
+                        border-radius: 30px;
+                    }
 
+                }
             }
 
 
