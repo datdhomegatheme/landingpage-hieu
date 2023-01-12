@@ -57,7 +57,7 @@
                         color: white;
                         border-radius: 800px;
                         text-align: center;
-
+                        line-height: 19px;
                     }
 
                     .item__arrow {
@@ -88,81 +88,98 @@
 
                 }
 
-                .item__submenu-arrow {
+                .item__submenu-group {
+                    display: none;
                     position: absolute;
-                    pointer-events: none;
-                    border: 12px solid transparent;
-                    border-bottom: 12px solid #fff;
-                    top: 12px;
-                    left: 32px;
+                    left: -84px;
+                    top: 16px;
 
-                }
-
-                .item__submenu {
-                    width: 248px;
-                    padding-top: -100px;
-                    background-color: #fff;
-                    border: 1px solid #fff;
-                    border-radius: 4px;
-                    position: absolute;
-                    box-shadow: 0 2px 8px rgb(0 0 0/ 12%);
-                    top: 32px;
-                    left: -76px;
-
-
-                    .sub-title {
-                        color: #363232;
-                        opacity: 0.8 !important;
-
+                    .item__submenu-arrow {
+                        pointer-events: none;
+                        border: 12px solid transparent;
+                        border-bottom: 12px solid #fff;
+                        position: relative;
+                        width: 1px;
+                        height: auto;
+                        top: px;
+                        left: 107px;
 
                     }
 
-                    .submenu__submenu-item {
-                        padding: 8px 16px;
+                    .item__submenu {
+                        width: 248px;
+                        padding-top: -100px;
+                        background-color: #fff;
+                        border: 1px solid #fff;
+                        border-radius: 4px;
+                        box-shadow: 0 2px 8px rgb(0 0 0/ 12%);
 
 
-                        .submenu-item__new {
-                            position: absolute;
-                            top: 36px;
-                            right: 80px;
-                            background-color: #ffc107;
-                            line-height: 18px;
-                            width: 40px;
-                            height: 20px;
-                            color: black;
-                            border-radius: 8px;
-                            text-align: center;
-                            opacity: 0.8;
+
+                        .sub-title {
+                            color: #363232;
+                            opacity: 0.8 !important;
+
 
                         }
 
-                        &:hover {
-                            background: #ebebeb;
+                        .submenu__submenu-item {
+                            padding: 8px 16px;
 
-                            .sub-title {
-                                color: black;
-                            }
 
                             .submenu-item__new {
-                                opacity: 1;
-                            }
-                        }
+                                position: absolute;
+                                top: 36px;
+                                right: 80px;
+                                background-color: #ffc107;
+                                line-height: 18px;
+                                width: 40px;
+                                height: 20px;
+                                color: black;
+                                border-radius: 8px;
+                                text-align: center;
+                                opacity: 0.8;
 
+                            }
+
+                            &:hover {
+                                background: #ebebeb;
+
+                                .sub-title {
+                                    color: black;
+                                }
+
+                                .submenu-item__new {
+                                    opacity: 1;
+                                }
+                            }
+
+
+
+                        }
 
 
                     }
 
-
                 }
+
+
+
 
 
 
                 &:hover {
+                    .item__submenu-group {
+                        display: block;
 
-                    .item__submenu-arrow,
-                    .item__submenu {
-                        visibility: visible;
+                        .item__submenu-arrow,
+                        .item__submenu {
+                            visibility: visible;
+                        }
+
                     }
+
+
                 }
 
 
@@ -326,6 +343,7 @@
                 }
 
                 &:hover {
+
                     .item__submenu-arrow,
                     .item__submenu {
                         display: block;

@@ -29,38 +29,48 @@ function MenuItems({ items = [] }) {
                         {/*render submenu*/}
                         {item.submenus && (
                             <>
-                                <div
-                                    className={
-                                        "item__submenu-arrow dropdown-element"
-                                    }
-                                ></div>
-                                <ul
-                                    className={"item__submenu dropdown-element"}
-                                >
-                                    {item.submenus?.map((submenu, index) => (
-                                        <>
-                                            <li
-                                                key={index}
-                                                className={
-                                                    "submenu__submenu-item"
-                                                }
-                                            >
-                                                <a
-                                                    alt={"link submenu item"}
-                                                    href={submenu.to}
-                                                    className={"sub-title"}
-                                                >
-                                                    {submenu.title}
-                                                </a>
-                                                {submenu.new && (
-                                                    <span className="submenu-item__new chip-font">
-                                                        New
-                                                    </span>
-                                                )}
-                                            </li>
-                                        </>
-                                    ))}
-                                </ul>
+                                <div className="item__submenu-group">
+                                    <div
+                                        className={
+                                            "item__submenu-arrow dropdown-element"
+                                        }
+                                    ></div>
+                                    <ul
+                                        className={
+                                            "item__submenu dropdown-element"
+                                        }
+                                    >
+                                        {item.submenus?.map(
+                                            (submenu, index) => (
+                                                <>
+                                                    <li
+                                                        key={index}
+                                                        className={
+                                                            "submenu__submenu-item"
+                                                        }
+                                                    >
+                                                        <a
+                                                            alt={
+                                                                "link submenu item"
+                                                            }
+                                                            href={submenu.to}
+                                                            className={
+                                                                "sub-title"
+                                                            }
+                                                        >
+                                                            {submenu.title}
+                                                        </a>
+                                                        {submenu.new && (
+                                                            <span className="submenu-item__new chip-font">
+                                                                New
+                                                            </span>
+                                                        )}
+                                                    </li>
+                                                </>
+                                            )
+                                        )}
+                                    </ul>
+                                </div>
                             </>
                         )}
                     </li>
