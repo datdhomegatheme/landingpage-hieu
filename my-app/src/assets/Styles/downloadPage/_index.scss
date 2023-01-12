@@ -22,65 +22,71 @@
         justify-content: center;
         align-items: center;
 
+        .container__custom {
+            margin: 0;
 
-        .download-page__content {
-            padding-right: 100px;
-            line-height: 40px;
+            .download-page__content {
+                padding-right: 100px;
+                line-height: 40px;
 
-            .content__btn {
-                margin-top: 10px;
+                .content__btn {
+                    margin-top: 10px;
 
-                a {
-                    padding: 12px 30px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 700;
+                    a {
+                        padding: 12px 30px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
 
-                }
-
-                .google-play {
-                    background: #ffffff;
-                    border-color: #ffffff;
-                    color: #6730e3;
-
-                    margin-right: 20px;
-
-
-
-                    &:hover {
-                        background: transparent;
-                        color: #fff;
                     }
-                }
 
-
-                .app-store {
-                    background: transparent;
-
-                    color: #ffffff;
-                    border-color: #ffffff;
-
-                    &:hover {
-                        background: #fff;
+                    .google-play {
+                        background: #ffffff;
+                        border-color: #ffffff;
                         color: #6730e3;
+
+                        margin-right: 20px;
+
+
+
+                        &:hover {
+                            background: transparent;
+                            color: #fff;
+                        }
                     }
 
 
-                }
+                    .app-store {
+                        background: transparent;
 
-                .app-store,
-                .google-play {
-                    svg {
-                        position: relative;
-                        top: 4px;
-                        right: 4px;
-                        border-radius: 30px;
+                        color: #ffffff;
+                        border-color: #ffffff;
+
+                        &:hover {
+                            background: #fff;
+                            color: #6730e3;
+                        }
+
+
                     }
 
+                    .app-store,
+                    .google-play {
+                        svg {
+                            position: relative;
+                            top: 4px;
+                            right: 4px;
+                            border-radius: 30px;
+                        }
+
+                    }
                 }
+
+
             }
-
-
         }
+
+
+
 
         .img-app-hand-top {
             width: 417px;
