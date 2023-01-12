@@ -1,0 +1,36 @@
+.share-page {
+    background-color: white;
+
+    .share-page__container {
+        padding: 100px 0;
+
+        .container__left {
+            img {
+                width: 418px;
+                height: auto;
+
+            }
+
+            margin-right: 200px;
+        }
+
+        .container__right {
+            margin-right: 120px;
+            line-height: 40px;
+
+            .right__content {
+                display: flex;
+                flex-direction: row;
+
+                .about-icon {
+                    border: 1px solid #dee2e6;
+                    margin-right: 32px;
+                }
+            }
+
+        }
+
+
+    }
+
+}
