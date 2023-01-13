@@ -10,6 +10,7 @@ const Images = {
     iconMobile: require(`./aboutPage/icon-mobile.png`),
     iconMobile2: require(`./aboutPage/icon-mobile-2.png`),
     appHandTop: require(`./downloadPage/app-hand-top.png`),
+    iconUnlimitedPackage: require(`./packagesPage/unlimited-icon.svg`),
 };
 
 export default Images;

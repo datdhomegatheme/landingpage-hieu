@@ -1,0 +1,54 @@
+.package {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        z-index: $z-index-bg-img;
+        height: 100%;
+        background: $bg-packages-page;
+        background-repeat: no-repeat;
+    }
+
+    .package__container {
+        padding: 48px 0;
+        margin: 0px 265px;
+        height: 90%;
+        position: relative;
+        line-height: 30px;
+        flex-direction: column;
+
+        .package__title {
+            flex-direction: column;
+
+            h1,
+            h2 {
+                text-align: center;
+            }
+
+            h2 {
+                width: 747px;
+                height: 69px;
+            }
+        }
+
+        .package__content {
+            .content__bg {
+                padding: 54px 112px;
+                margin: 10px;
+                box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+                border-radius: 1.5rem;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.2s ease-out;
+            }
+
+            button {
+                padding: 10px 25px;
+            }
+        }
+    }
+}

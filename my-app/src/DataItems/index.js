@@ -2,6 +2,9 @@ import Images from "../assets/Images";
 import PolylineIcon from "@mui/icons-material/Polyline";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
+import IconBasicPackage from "../assets/Images/packagesPage/basic-icon.svg";
+import IconStandardPackage from "../assets/Images/packagesPage/standard-icon.svg";
+import IconUnlimitedPackage from "../assets/Images/packagesPage/unlimited-icon.svg";
 
 const aboutItems = [
     {
@@ -109,8 +112,35 @@ const headerItems = [
     },
     {
         title: "Contact",
-        to: "contact",
+        to: "/contact",
     },
 ];
 
-export { aboutItems, promoItems, headerItems };
+const packageItems = [
+    {
+        type: "Basic",
+        icon: IconBasicPackage,
+        user: 5,
+        interface: "Customization interface",
+        update: "Weekly",
+        price: "$29",
+    },
+    {
+        type: "Standard",
+        icon: IconStandardPackage,
+        user: 10,
+        interface: "Customization interface",
+        update: "Daily",
+        price: "$145",
+    },
+    {
+        type: "Unlimited",
+        icon: IconUnlimitedPackage,
+        user: 20,
+        interface: "Fully Customization interface",
+        update: "Free",
+        price: "$249",
+    },
+];
+
+export { aboutItems, promoItems, headerItems, packageItems };
