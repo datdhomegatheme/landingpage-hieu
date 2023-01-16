@@ -1,8 +1,25 @@
 import { packageItems } from "../../DataItems";
 import Images from "../../assets/Images";
-// import IconUnlimitedPackage from "../../assets/Images/packagesPage/unlimited-icon.svg";
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    Collapse,
+    IconButton,
+    styled,
+    Typography,
+} from "@mui/material";
+import DescriptionIcon from "@mui/icons-material/Description";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import React from "react";
+import { ExpandMore } from "@mui/icons-material";
 
 function PackagesPage() {
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
     return (
         <>
             <div className="package">
@@ -25,32 +42,66 @@ function PackagesPage() {
                                     <div className="bg-icon d-flex">
                                         <img src={item.icon} alt={item.type} />
                                     </div>
+                                    <p>
+                                        {item.user}{" "}
+                                        <span>Users access same time</span>
+                                    </p>
+                                    <p>Integrated eCommerce</p>
+                                    <p>{item.interface}</p>
+                                    <p>
+                                        {item.update}
+                                        <span>updated</span>
+                                    </p>
+                                    <p>24/7 Phone Support</p>
+                                    <p>Event Analytics</p>
+                                    <p className="bg__price">{item.price}</p>
+                                    <button className="btn">
+                                        Purchase now
+                                    </button>
                                 </div>
                             </>
                         ))}
-                        {/* <div className="content__bg">
-                            <h2>title</h2>
-                            <div className="bg-icon d-flex"></div>
-                            <p>Users access same time</p>
-                            <p>Integrated eCommerce</p>
-                            <p>Customization interface</p>
-                            <p>Weekly updated</p>
-                            <p>24/7 Phone Support</p>
-                            <p>Event Analytics</p>
-                            <h1>$29</h1>
-                            <button className="btn">Purchase now</button>
-                        </div> */}
-                        {/* {packageItems.map((item, index) => (
-                            <>
-                                <div key={index} className="content__bg">
-                                    <div className="bg-icon d-flex">
-                                        {item.icon}
-                                    </div>
-                                    <h2>{item.title}</h2>
-                                    <p className="text-gray">{item.content}</p>
-                                </div>
-                            </>
-                        ))} */}
+                    </div>
+                    <p className="text-gray">
+                        If you need custom services or Need more?{" "}
+                        <span>
+                            <a href="/#">Contact us</a>
+                        </span>
+                    </p>
+
+                    <div className="container__card">
+                        <Card>
+                            <CardHeader
+                                avatar={<DescriptionIcon />}
+                                title="Which license do i need?"
+                                action={
+                                    <ExpandMore
+                                        expand={expanded}
+                                        onClick={handleExpandClick}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMoreIcon />
+                                    </ExpandMore>
+                                }
+                            ></CardHeader>
+                            <Collapse
+                                className="card__extended-content"
+                                in={expanded}
+                                timeout="auto"
+                                unmountOnExit
+                            >
+                                <CardContent>
+                                    <Typography paragraph>
+                                        Uniquely leverage other's distinctive
+                                        infomediaries rather than leveraged
+                                        supply chains. Continually seize
+                                        distributed collaboration and
+                                        idea-sharing whereas user.
+                                    </Typography>
+                                </CardContent>
+                            </Collapse>
+                        </Card>
                     </div>
                 </div>
             </div>
