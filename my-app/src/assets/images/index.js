@@ -11,6 +11,10 @@ const Images = {
     iconMobile2: require(`./aboutPage/icon-mobile-2.png`),
     appHandTop: require(`./downloadPage/app-hand-top.png`),
     iconUnlimitedPackage: require(`./packagesPage/unlimited-icon.svg`),
+    airBnb: require(`./FeedbackPage/client-1-color.png`),
+    spotify: require(`./FeedbackPage/client-6-color.png`),
+    payPal: require(`./FeedbackPage/client-3-color.png`),
+    quote: require(`./FeedbackPage/quote.png`),
 };
 
 export default Images;

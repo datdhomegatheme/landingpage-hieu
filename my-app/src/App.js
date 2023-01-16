@@ -6,6 +6,7 @@ import PromoPage from "./pages/PromoPage";
 import SharePage from "./pages/SharePage";
 import DownloadPage from "./pages/DownloadPage";
 import PackagesPage from "./pages/PackagesPage";
+import FeedbackPage from "./pages/FeedbackPage";
 
 function App() {
     const [scrollPosition, setScrollPosition] = useState();
@@ -43,6 +44,7 @@ function App() {
             <SharePage />
             <DownloadPage />
             <PackagesPage />
+            <FeedbackPage />
         </div>
     );
 }
