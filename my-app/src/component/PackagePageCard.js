@@ -7,48 +7,45 @@ import {
     styled,
     Typography,
 } from "@mui/material";
-import DescriptionIcon from "@mui/icons-material/Description";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 import React from "react";
-import { ExpandMore } from "@mui/icons-material";
 
-const PackagePageCard = () => {
-    return ();
-}
+const PackagePageCard = ({ icon, title, content }) => {
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleExpandClick = () => {
+        setExpanded(!expanded);
+    };
+    return (
+        <div className="container__card" onClick={handleExpandClick}>
+            <Card className="card__extend">
+                <CardHeader
+                    className="card__header-content"
+                    avatar={icon}
+                    title={title}
+                    action={
+                        expanded === false ? (
+                            <AddIcon
+                                className="card__icon"
+                                expand={expanded}
+                            ></AddIcon>
+                        ) : (
+                            <RemoveIcon
+                                className="card__icon"
+                                expand={expanded}
+                            ></RemoveIcon>
+                        )
+                    }
+                ></CardHeader>
+                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                    <CardContent className="card__content">
+                        <Typography paragraph>{content}</Typography>
+                    </CardContent>
+                </Collapse>
+            </Card>
+        </div>
+    );
+};
 
 export default PackagePageCard;
-
-<div className="container__card">
-                        <Card>
-                            <CardHeader
-                                avatar={<DescriptionIcon />}
-                                title="Which license do i need?"
-                                action={
-                                    <ExpandMore
-                                        expand={expanded}
-                                        onClick={handleExpandClick}
-                                        aria-expanded={expanded}
-                                        aria-label="show more"
-                                    >
-                                        <ExpandMoreIcon />
-                                    </ExpandMore>
-                                }
-                            ></CardHeader>
-                            <Collapse
-                                className="card__extended-content"
-                                in={expanded}
-                                timeout="auto"
-                                unmountOnExit
-                            >
-                                <CardContent>
-                                    <Typography paragraph>
-                                        Uniquely leverage other's distinctive
-                                        infomediaries rather than leveraged
-                                        supply chains. Continually seize
-                                        distributed collaboration and
-                                        idea-sharing whereas user.
-                                    </Typography>
-                                </CardContent>
-                            </Collapse>
-                        </Card>
-                    </div>
