@@ -191,6 +191,29 @@ const dataScreenshots = [
     },
 ];
 
+const dataMembers = [
+    {
+        avatar: Images.member1,
+        name: "Edna Mason 1",
+        job: "Developer 1",
+    },
+    {
+        avatar: Images.member2,
+        name: "Edna Mason 2",
+        job: "Developer 2",
+    },
+    {
+        avatar: Images.member3,
+        name: "Edna Mason 3",
+        job: "Developer 3",
+    },
+    {
+        avatar: Images.member4,
+        name: "Edna Mason 4",
+        job: "Developer 4",
+    },
+];
+
 export {
     aboutItems,
     promoItems,
@@ -198,4 +221,5 @@ export {
     packageItems,
     dataClients,
     dataScreenshots,
+    dataMembers,
 };

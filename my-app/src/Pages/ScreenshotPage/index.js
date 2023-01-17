@@ -2,15 +2,14 @@ import Images from "../../assets/Images";
 import { dataScreenshots } from "../../DataItems";
 
 function ScreenshotPage() {
-    const carousel = document.querySelector(
-        ".screenshots-page__container__slider"
-    );
-    const dragging = (e) => {
-        console.log(e.pageX);
-        console.log(123131);
-    };
+    // const carousel = document.querySelector(
+    //     ".screenshots-page__container__slider"
+    // );
+    // const dragging = (e) => {
+    //     console.log(e.pageX);
+    // };
 
-    carousel.addEventListener("mousemove", dragging);
+    // carousel.addEventListener("mousemove", dragging);
     return (
         <section className="screenshots-page">
             <div className="screenshots-page__container d-flex">

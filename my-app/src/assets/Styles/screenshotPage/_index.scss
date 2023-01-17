@@ -19,7 +19,7 @@
             position: relative;
             display: flex;
             flex-direction: row;
-            width: 1297px;
+            width: 100%;
 
 
             .slider__frame {
@@ -39,6 +39,7 @@
             .slider__Items {
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
@@ -52,6 +53,7 @@
                     top: -36px;
                     left: -24px;
                 }
+
             }
         }
 

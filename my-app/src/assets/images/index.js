@@ -23,6 +23,12 @@ const Images = {
     screenshot04: require(`./screenshotPage/04.png`),
     screenshot05: require(`./screenshotPage/05.png`),
     screenshot06: require(`./screenshotPage/06.png`),
+    member1: require(`./teamPage/team-1.jpg`),
+    member2: require(`./teamPage/team-2.jpg`),
+
+    member3: require(`./teamPage/team-3.jpg`),
+
+    member4: require(`./teamPage/team-4.jpg`),
 };
 
 export default Images;
