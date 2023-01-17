@@ -143,4 +143,25 @@ const packageItems = [
     },
 ];
 
-export { aboutItems, promoItems, headerItems, packageItems };
+const dataClients = [
+    {
+        avatar: Images.client1,
+        name: "John Charles",
+        company: "Google",
+        feedback: ` Interactively optimize fully researched expertise vis-a-vis plug-and-play relationships. Intrinsicly develop viral core competencies for fully tested customer service. Enthusiastically create next-generation growth strategies and.`,
+    },
+    {
+        avatar: Images.client1,
+        name: "Arabella Ora",
+        company: "Amazon",
+        feedback: `Rapidiously develop user friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables. Rapidiously utilize focused platforms through end-to-end schemas.`,
+    },
+    {
+        avatar: Images.client1,
+        name: "Jeremy Jere",
+        company: "Themetags",
+        feedback: `Objectively synthesize client-centered e-tailers for maintainable channels. Holisticly administrate customer directed vortals whereas tactical functionalities. Energistically monetize reliable imperatives through client-centric best practices. Collaboratively.`,
+    },
+];
+
+export { aboutItems, promoItems, headerItems, packageItems, dataClients };

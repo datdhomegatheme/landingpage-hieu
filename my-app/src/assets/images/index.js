@@ -15,6 +15,8 @@ const Images = {
     spotify: require(`./FeedbackPage/client-6-color.png`),
     payPal: require(`./FeedbackPage/client-3-color.png`),
     quote: require(`./FeedbackPage/quote.png`),
+    client1: require(`./FeedbackPage/client-1.jpg`),
+    heroBg1: require(`./FeedbackPage/hero-bg-1.jpg`),
 };
 
 export default Images;
