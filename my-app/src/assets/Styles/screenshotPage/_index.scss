@@ -19,7 +19,6 @@
             position: relative;
             display: flex;
             flex-direction: row;
-            width: 100%;
 
 
             .slider__frame {
@@ -36,26 +35,35 @@
                 border-radius: 40px;
             }
 
-            .slider__Items {
-                width: 100%;
+            .slider__items {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
 
-                img {
-                    position: relative;
-                    transform: scale(0.8);
-                    transition: 0.3s;
-                    border: 1px solid #ebebeb;
-                    border-radius: 30px;
-                    z-index: 1;
-                    top: -36px;
-                    left: -24px;
+
+                .sc-ifAKCX {
+                    width: 1172px;
+
+                    img {
+                        position: relative;
+                        transform: scale(0.8);
+                        transition: 0.3s;
+                        border: 1px solid #ebebeb;
+                        border-radius: 30px;
+                        z-index: 1;
+                        top: -36px;
+                        left: -24px;
+                    }
                 }
 
-            }
-        }
 
+
+
+            }
+
+
+        }
     }
+
+
 }

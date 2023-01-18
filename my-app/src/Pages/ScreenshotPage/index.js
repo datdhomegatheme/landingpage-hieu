@@ -1,15 +1,10 @@
 import Images from "../../assets/Images";
 import { dataScreenshots } from "../../DataItems";
+import React from "react";
+import Carousel from "react-grid-carousel";
+import { style } from "@mui/system";
 
 function ScreenshotPage() {
-    // const carousel = document.querySelector(
-    //     ".screenshots-page__container__slider"
-    // );
-    // const dragging = (e) => {
-    //     console.log(e.pageX);
-    // };
-
-    // carousel.addEventListener("mousemove", dragging);
     return (
         <section className="screenshots-page">
             <div className="screenshots-page__container d-flex">
@@ -22,15 +17,25 @@ function ScreenshotPage() {
 
                 <div className="screenshots-page__container__slider">
                     <div className="slider__frame"></div>
-                    <div className="slider__Items">
-                        {dataScreenshots.map((item, index) => (
-                            <img
-                                key={index}
-                                src={item.img}
-                                id={item.id}
-                                alt="screenshots"
-                            />
-                        ))}
+                    <div className="slider__items">
+                        <Carousel
+                            cols={3}
+                            autoplay={5000}
+                            hideArrow={true}
+                            loop={true}
+                            showDots
+                        >
+                            {dataScreenshots.map((item, index) => (
+                                <Carousel.Item>
+                                    <img
+                                        key={index}
+                                        src={item.img}
+                                        id={item.id}
+                                        alt="screenshots"
+                                    />
+                                </Carousel.Item>
+                            ))}
+                        </Carousel>
                     </div>
                 </div>
             </div>
