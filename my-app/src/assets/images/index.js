@@ -25,10 +25,9 @@ const Images = {
     screenshot06: require(`./screenshotPage/06.png`),
     member1: require(`./teamPage/team-1.jpg`),
     member2: require(`./teamPage/team-2.jpg`),
-
     member3: require(`./teamPage/team-3.jpg`),
-
     member4: require(`./teamPage/team-4.jpg`),
+    bgTopFooter: require("./footer/footer-top-shape.png"),
 };
 
 export default Images;

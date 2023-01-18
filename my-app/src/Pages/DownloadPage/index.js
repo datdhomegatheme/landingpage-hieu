@@ -7,7 +7,7 @@ function DownloadPage() {
     return (
         <div className="download-page d-flex">
             <div className="download-page__container">
-                <Grid className="container__custom" container spacing={10}>
+                <Grid className="container__custom" container>
                     <Grid
                         className="d-flex"
                         xs={12}
