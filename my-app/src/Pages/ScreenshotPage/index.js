@@ -1,8 +1,6 @@
-import Images from "../../assets/Images";
 import { dataScreenshots } from "../../DataItems";
 import React from "react";
 import Carousel from "react-grid-carousel";
-import { style } from "@mui/system";
 
 function ScreenshotPage() {
     return (
