@@ -7,9 +7,9 @@ function AboutPage() {
             <div className="about__container container d-flex">
                 <div className="container__left">
                     <h1>Use Your Android or ios Device to Manage Everything</h1>
-                    {aboutItems.map((item, index) => (
+                    {aboutItems.map((item, indexAbout) => (
                         <>
-                            <div key={index} className="left__content">
+                            <div key={indexAbout} className="left__content">
                                 <div className="about-icon">
                                     <img alt="about icon" src={item.icon} />
                                 </div>

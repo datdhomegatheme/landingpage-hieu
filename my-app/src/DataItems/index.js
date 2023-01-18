@@ -6,7 +6,7 @@ import IconBasicPackage from "../assets/Images/packagesPage/basic-icon.svg";
 import IconStandardPackage from "../assets/Images/packagesPage/standard-icon.svg";
 import IconUnlimitedPackage from "../assets/Images/packagesPage/unlimited-icon.svg";
 
-const aboutItems = [
+export const aboutItems = [
     {
         icon: Images.iconGoal,
         title: `Proactively syndicate open-source e-markets after low-risk high-yield synergy. Professionally simplify visionary technology.`,
@@ -25,7 +25,7 @@ const aboutItems = [
     },
 ];
 
-const promoItems = [
+export const promoItems = [
     {
         icon: <PolylineIcon className="promo-icon" />,
         title: "Clean Design",
@@ -45,7 +45,7 @@ const promoItems = [
     },
 ];
 
-const headerItems = [
+export const headerItems = [
     {
         title: "Home",
         to: "/home",
@@ -116,7 +116,7 @@ const headerItems = [
     },
 ];
 
-const packageItems = [
+export const packageItems = [
     {
         type: "Basic",
         icon: IconBasicPackage,
@@ -143,7 +143,7 @@ const packageItems = [
     },
 ];
 
-const dataClients = [
+export const dataClients = [
     {
         avatar: Images.client1,
         name: "John Charles",
@@ -164,7 +164,7 @@ const dataClients = [
     },
 ];
 
-const dataScreenshots = [
+export const dataScreenshots = [
     {
         id: "c1",
         img: Images.screenshot01,
@@ -191,7 +191,7 @@ const dataScreenshots = [
     },
 ];
 
-const dataMembers = [
+export const dataMembers = [
     {
         avatar: Images.member1,
         name: "Edna Mason 1",
@@ -213,13 +213,3 @@ const dataMembers = [
         job: "Developer 4",
     },
 ];
-
-export {
-    aboutItems,
-    promoItems,
-    headerItems,
-    packageItems,
-    dataClients,
-    dataScreenshots,
-    dataMembers,
-};
