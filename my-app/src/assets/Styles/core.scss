@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: $font-weight-sm;
@@ -69,6 +69,7 @@ h2 {
 
 p {
   font-size: 16px;
+  line-height: 24px;
 }
 
 .btn {
@@ -123,9 +124,32 @@ p {
   }
 }
 
+.text-medium {
+  font-size: 1.25em;
+
+  font-weight: 600;
+}
+
+.overview__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 30px auto;
+  padding: 4px;
+}
+
+
+
+
 @import 'header';
 @import 'homePage';
 @import 'promoPage';
 @import 'aboutPage';
 @import 'sharePage';
 @import 'downloadPage';
+@import 'packagesPage';
+@import 'feedbackPage';
+@import 'screenshotPage';
+@import 'teamPage';
+@import 'footer';

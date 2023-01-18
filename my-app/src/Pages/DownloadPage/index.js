@@ -2,11 +2,12 @@ import Images from "../../assets/Images";
 import Grid from "@mui/material/Grid";
 import AndroidIcon from "@mui/icons-material/Android";
 import AppleIcon from "@mui/icons-material/Apple";
+
 function DownloadPage() {
     return (
         <div className="download-page d-flex">
             <div className="download-page__container">
-                <Grid className="container__custom" container spacing={10}>
+                <Grid className="container__custom" container>
                     <Grid
                         className="d-flex"
                         xs={12}

@@ -14,9 +14,9 @@ function PromoPage() {
                         </h2>
                     </div>
                     <div className="promo__content d-flex">
-                        {promoItems.map((item, index) => (
+                        {promoItems.map((item, indexPromo) => (
                             <>
-                                <div key={index} className="content__bg">
+                                <div key={indexPromo} className="content__bg">
                                     <div className="bg-icon d-flex">
                                         {item.icon}
                                     </div>
