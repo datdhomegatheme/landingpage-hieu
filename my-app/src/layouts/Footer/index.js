@@ -19,7 +19,7 @@ function Footer() {
             <footer className="footer">
                 <div className="footer__container d-flex">
                     <Grid className={"footer__container__custom"} container>
-                        <Grid xs={12} sm={4} md={4} lg={4} xl={4}>
+                        <Grid sm={4}>
                             <img src={Images.logo} />
                             <p>
                                 Holisticly empower premium architectures without
@@ -41,8 +41,8 @@ function Footer() {
                                 </a>
                             </div>
                         </Grid>
-                        <Grid container xs={12} sm={8} md={8} lg={8} xl={8}>
-                            <Grid xs={12} sm={4} md={4} lg={4} xl={4}>
+                        <Grid container sm={8}>
+                            <Grid sm={4}>
                                 <h2>Resources</h2>
                                 <ul>
                                     <li className="text-gray">
@@ -62,7 +62,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </Grid>
-                            <Grid xs={12} sm={4} md={4} lg={4} xl={4}>
+                            <Grid sm={4}>
                                 <h2>Company</h2>
                                 <ul>
                                     <li>
@@ -82,7 +82,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </Grid>
-                            <Grid xs={12} sm={4} md={4} lg={4} xl={4}>
+                            <Grid sm={4}>
                                 <h2>Location</h2>
                                 <ul>
                                     <li>

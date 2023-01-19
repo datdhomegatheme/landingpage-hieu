@@ -1,23 +1,7 @@
-import { packageItems } from "../../DataItems";
-import Images from "../../assets/Images";
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    Collapse,
-    IconButton,
-    styled,
-    Typography,
-} from "@mui/material";
-import DescriptionIcon from "@mui/icons-material/Description";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { dataPackages, packageItems } from "../../DataItems";
+
 import React from "react";
-import { ExpandMore } from "@mui/icons-material";
 import PackagePageCard from "../../component/PackagePageCard";
-import FilterIcon from "@mui/icons-material/Filter";
-import LockIcon from "@mui/icons-material/Lock";
-import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
-import WalletIcon from "@mui/icons-material/Wallet";
 
 function PackagesPage() {
     return (
@@ -70,42 +54,15 @@ function PackagesPage() {
                     </p>
 
                     <div className="container__package-card">
-                        <PackagePageCard
-                            icon={<DescriptionIcon className="card__icon" />}
-                            title={"Which license do i need?"}
-                            content={`Uniquely leverage other's distinctive
-                        infomediaries rather than leveraged
-                        supply chains. Continually seize
-                        distributed collaboration and
-                        idea-sharing whereas user.`}
-                        />
-                        <PackagePageCard
-                            icon={<DescriptionIcon className="card__icon" />}
-                            title={" Which license do I need?"}
-                            content={`Distinctively recaptiualize customer directed channels before installed base communities. Continually disintermediate distinctive web services vis-a-vis team building e-commerce.`}
-                        />
-                        <PackagePageCard
-                            icon={<FilterIcon className="card__icon" />}
-                            title={"How do I get access to a theme?"}
-                            content={`Rapidiously incentivize virtual e-commerce and exceptional e-tailers. Progressively network focused catalysts for change without orthogonal benefits. Dramatically empower.`}
-                        />
-                        <PackagePageCard
-                            icon={<LockIcon className="card__icon" />}
-                            title={"How do I get access to a theme?"}
-                            content={`Quickly recaptiualize revolutionary meta-services and multimedia based channels. Seamlessly impact diverse deliverables rather than cooperative strategic theme areas.`}
-                        />
-                        <PackagePageCard
-                            icon={
-                                <AccountBalanceWalletIcon className="card__icon" />
-                            }
-                            title={"How do I see previous orders?"}
-                            content={`Proactively monetize long-term high-impact innovation and scalable relationships. Dynamically mesh principle-centered functionalities before next-generation best practices. Distinctively empower.`}
-                        />
-                        <PackagePageCard
-                            icon={<WalletIcon className="card__icon" />}
-                            title={"How do I see previous orders?"}
-                            content={`Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosfluorescently.`}
-                        />
+                        {dataPackages.map((item) => (
+                            <div key={item.id}>
+                                <PackagePageCard
+                                    icon={item.icon}
+                                    title={item.title}
+                                    content={item.content}
+                                />
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

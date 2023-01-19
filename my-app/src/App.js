@@ -10,6 +10,7 @@ import FeedbackPage from "./pages/FeedbackPage";
 import ScreenshotPage from "./pages/ScreenshotPage";
 import TeamPage from "./pages/TeamPage";
 import Footer from "./layouts/Footer";
+import ContactPage from "./pages/ContantPage";
 
 function App() {
     const [scrollPosition, setScrollPosition] = useState();
@@ -49,7 +50,8 @@ function App() {
             <PackagesPage />
             <FeedbackPage />
             <ScreenshotPage />
-            <TeamPage />
+            {/* <TeamPage /> */}
+            <ContactPage />
             <Footer />
         </div>
     );

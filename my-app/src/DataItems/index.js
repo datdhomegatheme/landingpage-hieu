@@ -5,6 +5,11 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import IconBasicPackage from "../assets/Images/packagesPage/basic-icon.svg";
 import IconStandardPackage from "../assets/Images/packagesPage/standard-icon.svg";
 import IconUnlimitedPackage from "../assets/Images/packagesPage/unlimited-icon.svg";
+import FilterIcon from "@mui/icons-material/Filter";
+import LockIcon from "@mui/icons-material/Lock";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import WalletIcon from "@mui/icons-material/Wallet";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 export const aboutItems = [
     {
@@ -27,17 +32,20 @@ export const aboutItems = [
 
 export const promoItems = [
     {
+        id: "1213213",
         icon: <PolylineIcon className="promo-icon" />,
         title: "Clean Design",
         content: "Increase sales by showing true dynamics of your website.",
     },
     {
+        id: "2qwe",
         icon: <LockOutlinedIcon className="promo-icon" />,
         title: "Secure Data",
         content:
             "Build your online store’s trust using Social Proof & Urgency.",
     },
     {
+        id: "qfdwq3",
         icon: <VisibilityOutlinedIcon className="promo-icon" />,
         title: "Retina Ready",
         content:
@@ -211,5 +219,48 @@ export const dataMembers = [
         avatar: Images.member4,
         name: "Edna Mason 4",
         job: "Developer 4",
+    },
+];
+
+export const dataPackages = [
+    {
+        id: 1,
+        icon: <DescriptionIcon className="card__icon" />,
+        title: "Which license do i need?",
+        content: `Uniquely leverage other's distinctive
+        infomediaries rather than leveraged
+        supply chains. Continually seize
+        distributed collaboration and
+        idea-sharing whereas user.`,
+    },
+    {
+        id: 2,
+        icon: <DescriptionIcon className="card__icon" />,
+        title: "Which license do i need?",
+        content: `Distinctively recaptiualize customer directed channels before installed base communities. Continually disintermediate distinctive web services vis-a-vis team building e-commerce.`,
+    },
+    {
+        id: 3,
+        icon: <FilterIcon className="card__icon" />,
+        title: "How do I get access to a theme?",
+        content: `Rapidiously incentivize virtual e-commerce and exceptional e-tailers. Progressively network focused catalysts for change without orthogonal benefits. Dramatically empower.`,
+    },
+    {
+        id: 4,
+        icon: <LockIcon className="card__icon" />,
+        title: "How do I get access to a theme?",
+        content: `Quickly recaptiualize revolutionary meta-services and multimedia based channels. Seamlessly impact diverse deliverables rather than cooperative strategic theme areas.`,
+    },
+    {
+        id: 5,
+        icon: <AccountBalanceWalletIcon className="card__icon" />,
+        title: "How do I see previous orders?",
+        content: `Proactively monetize long-term high-impact innovation and scalable relationships. Dynamically mesh principle-centered functionalities before next-generation best practices. Distinctively empower.`,
+    },
+    {
+        id: 6,
+        icon: <WalletIcon className="card__icon" />,
+        title: "How do I see previous orders?",
+        content: `Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosfluorescently.`,
     },
 ];

@@ -14,16 +14,14 @@ function PromoPage() {
                         </h2>
                     </div>
                     <div className="promo__content d-flex">
-                        {promoItems.map((item, indexPromo) => (
-                            <>
-                                <div key={indexPromo} className="content__bg">
-                                    <div className="bg-icon d-flex">
-                                        {item.icon}
-                                    </div>
-                                    <h2>{item.title}</h2>
-                                    <p className="text-gray">{item.content}</p>
+                        {promoItems.map((item) => (
+                            <div key={item.id} className="content__bg">
+                                <div className="bg-icon d-flex">
+                                    {item.icon}
                                 </div>
-                            </>
+                                <h2>{item.title}</h2>
+                                <p className="text-gray">{item.content}</p>
+                            </div>
                         ))}
                     </div>
                 </div>
