@@ -264,3 +264,36 @@ export const dataPackages = [
         content: `Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosfluorescently.`,
     },
 ];
+
+export const dataNewPage = [
+    {
+        type: "lifestyle",
+        image: Images.newPage1,
+        date: "Jan 21, 2019",
+        comments: 45,
+        share: 10,
+        title: "Appropriately productize fully",
+        content:
+            "ome quick example text to build on the card title and make up the bulk.",
+    },
+    {
+        type: "Technology",
+        image: Images.newPage2,
+        date: "May 26, 2019",
+        comments: 30,
+        share: 5,
+        title: "Quickly formulate backend",
+        content:
+            "Synergistically engage effective ROI after customer directed partnerships.",
+    },
+    {
+        type: "Science",
+        image: Images.newPage3,
+        date: "Apr 25, 2019",
+        comments: 41,
+        share: 30,
+        title: "Objectively extend extensive",
+        content:
+            "Holisticly mesh open-source leadership rather than proactive users.",
+    },
+];
