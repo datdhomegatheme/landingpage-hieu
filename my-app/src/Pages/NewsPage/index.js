@@ -15,7 +15,11 @@ function NewsPage() {
                 </h2>
                 <Grid container>
                     {dataNewPage.map((item, index) => (
-                        <Grid xs={4} className="new-page__container__card">
+                        <Grid
+                            key={index}
+                            xs={4}
+                            className="new-page__container__card"
+                        >
                             <Card>
                                 <CardMedia
                                     className="card__img"

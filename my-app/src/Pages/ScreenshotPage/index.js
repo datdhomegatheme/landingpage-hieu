@@ -24,9 +24,8 @@ function ScreenshotPage() {
                             showDots
                         >
                             {dataScreenshots.map((item, index) => (
-                                <Carousel.Item>
+                                <Carousel.Item key={index}>
                                     <img
-                                        key={index}
                                         src={item.img}
                                         id={item.id}
                                         alt="screenshots"

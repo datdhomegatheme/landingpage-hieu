@@ -261,7 +261,7 @@ export const dataPackages = [
         id: 6,
         icon: <WalletIcon className="card__icon" />,
         title: "How do I see previous orders?",
-        content: `Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosfluorescently.`,
+        content: `Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosphorescently.`,
     },
 ];
 
@@ -296,4 +296,10 @@ export const dataNewPage = [
         content:
             "Holisticly mesh open-source leadership rather than proactive users.",
     },
+];
+
+export const dataIconClient = [
+    { src: Images.airBnb, alt: "airbnb logo" },
+    { src: Images.spotify, alt: "spotify logo" },
+    { src: Images.payPal, alt: "paypal" },
 ];

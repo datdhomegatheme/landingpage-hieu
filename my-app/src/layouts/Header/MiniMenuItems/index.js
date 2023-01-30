@@ -7,8 +7,8 @@ function MiniMenuItems({ items = [] }) {
         <div id={"navbar-collapse"} className={"navbar-collapse-hide"}>
             <ul>
                 {items.map((item, index) => (
-                    <>
-                        <li key={index}>
+                    <div key={index}>
+                        <li>
                             <a href={item.to}>
                                 {" "}
                                 {item.title}
@@ -21,7 +21,7 @@ function MiniMenuItems({ items = [] }) {
                             </a>
                             {/*render submenu*/}
                             {item.submenus && (
-                                <>
+                                <div>
                                     <div
                                         className={
                                             "item__submenu-arrow dropdown-element"
@@ -34,9 +34,8 @@ function MiniMenuItems({ items = [] }) {
                                     >
                                         {item.submenus?.map(
                                             (submenu, index) => (
-                                                <>
+                                                <div key={index}>
                                                     <li
-                                                        key={index}
                                                         className={
                                                             "submenu__submenu-item"
                                                         }
@@ -58,14 +57,14 @@ function MiniMenuItems({ items = [] }) {
                                                             </span>
                                                         )}
                                                     </li>
-                                                </>
+                                                </div>
                                             )
                                         )}
                                     </ul>
-                                </>
+                                </div>
                             )}
                         </li>
-                    </>
+                    </div>
                 ))}
             </ul>
         </div>

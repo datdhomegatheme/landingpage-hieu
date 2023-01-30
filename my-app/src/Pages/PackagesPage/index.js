@@ -20,30 +20,26 @@ function PackagesPage() {
                     </div>
                     <div className="package__content d-flex">
                         {packageItems.map((item, index) => (
-                            <>
-                                <div key={index} className="content__bg">
-                                    <h2>{item.type}</h2>
-                                    <div className="bg-icon d-flex">
-                                        <img src={item.icon} alt={item.type} />
-                                    </div>
-                                    <p>
-                                        {item.user}{" "}
-                                        <span>Users access same time</span>
-                                    </p>
-                                    <p>Integrated eCommerce</p>
-                                    <p>{item.interface}</p>
-                                    <p>
-                                        {item.update}
-                                        <span>updated</span>
-                                    </p>
-                                    <p>24/7 Phone Support</p>
-                                    <p>Event Analytics</p>
-                                    <p className="bg__price">{item.price}</p>
-                                    <button className="btn">
-                                        Purchase now
-                                    </button>
+                            <div key={index} className="content__bg">
+                                <h2>{item.type}</h2>
+                                <div className="bg-icon d-flex">
+                                    <img src={item.icon} alt={item.type} />
                                 </div>
-                            </>
+                                <p>
+                                    {item.user}{" "}
+                                    <span>Users access same time</span>
+                                </p>
+                                <p>Integrated eCommerce</p>
+                                <p>{item.interface}</p>
+                                <p>
+                                    {item.update}
+                                    <span>updated</span>
+                                </p>
+                                <p>24/7 Phone Support</p>
+                                <p>Event Analytics</p>
+                                <p className="bg__price">{item.price}</p>
+                                <button className="btn">Purchase now</button>
+                            </div>
                         ))}
                     </div>
                     <p className="text-gray">

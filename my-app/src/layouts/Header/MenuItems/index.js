@@ -6,15 +6,15 @@ function MenuItems({ items = [] }) {
         // render menu
         <ul className={"navbar__menu-items"}>
             {items.map((item, index) => (
-                <>
-                    <li key={index} className={"menu-items__item d-flex"}>
+                <div key={index}>
+                    <li className={"menu-items__item d-flex"}>
                         <a
                             href={item.to}
                             className="title"
                             alt={"link nav item"}
                             role={"button"}
                         >
-                            <>
+                            <div>
                                 {item.title}
                                 {item.submenus && (
                                     <ArrowDropDownIcon className="item__arrow" />
@@ -24,11 +24,11 @@ function MenuItems({ items = [] }) {
                                         New
                                     </span>
                                 )}
-                            </>
+                            </div>
                         </a>
                         {/*render submenu*/}
                         {item.submenus && (
-                            <>
+                            <div>
                                 <div className="item__submenu-group">
                                     <div
                                         className={
@@ -42,9 +42,8 @@ function MenuItems({ items = [] }) {
                                     >
                                         {item.submenus?.map(
                                             (submenu, index) => (
-                                                <>
+                                                <div key={index}>
                                                     <li
-                                                        key={index}
                                                         className={
                                                             "submenu__submenu-item"
                                                         }
@@ -66,15 +65,15 @@ function MenuItems({ items = [] }) {
                                                             </span>
                                                         )}
                                                     </li>
-                                                </>
+                                                </div>
                                             )
                                         )}
                                     </ul>
                                 </div>
-                            </>
+                            </div>
                         )}
                     </li>
-                </>
+                </div>
             ))}
         </ul>
     );

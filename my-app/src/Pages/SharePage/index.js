@@ -20,11 +20,11 @@ function SharePage() {
                     </p>
                     <div className="right__content">
                         {aboutItems.map((item, index) => (
-                            <>
-                                <div key={index} className="about-icon">
+                            <div key={index}>
+                                <div className="about-icon">
                                     <img alt="about icon" src={item.icon} />
                                 </div>
-                            </>
+                            </div>
                         ))}
                     </div>
                 </div>

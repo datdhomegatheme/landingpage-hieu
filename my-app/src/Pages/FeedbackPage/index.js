@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import Images from "../../assets/Images";
 
-import { dataClients } from "../../DataItems";
+import { dataClients, dataIconClient } from "../../DataItems";
 
 import SwipeableViews from "react-swipeable-views";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
@@ -35,24 +35,11 @@ function FeedbackPage() {
                                 internal.
                             </h2>
                             <ul className="icon-clients">
-                                <li>
-                                    <img
-                                        src={Images.airBnb}
-                                        alt="airbnb logo"
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        src={Images.spotify}
-                                        alt="spotify logo"
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        src={Images.payPal}
-                                        alt="payPal logo"
-                                    />
-                                </li>
+                                {dataIconClient.map((item) => {
+                                    <li>
+                                        <img src={item.src} alt={item.alt} />
+                                    </li>;
+                                })}
                             </ul>
                         </Grid>
                         <Grid
