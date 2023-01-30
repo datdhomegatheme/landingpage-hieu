@@ -5,7 +5,7 @@ function ContactPage() {
         <section className="contact-page">
             <div className="container">
                 <Grid container>
-                    <Grid sm={5} className={"container__contact-info"}>
+                    <Grid item sm={5} className={"container__contact-info"}>
                         <h1 className="contact-title">Contact With Us</h1>
                         <p className="text-gray">
                             It's very easy to get in touch with us. Just use the
@@ -23,7 +23,7 @@ function ContactPage() {
                             Email: <a href="#/">hello@yourdomain.com</a>
                         </p>
                     </Grid>
-                    <Grid className={"container__reach-us"} sm={7}>
+                    <Grid item className={"container__reach-us"} sm={7}>
                         <h1 className="reach-us__title">Reach us quickly</h1>
                         <form className="contact-form">
                             <input

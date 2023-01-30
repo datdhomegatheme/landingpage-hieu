@@ -1,5 +1,4 @@
 import { Card, CardMedia, Grid, CardContent } from "@mui/material";
-import Images from "../../assets/Images";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { dataNewPage } from "../../DataItems";
 
@@ -16,6 +15,7 @@ function NewsPage() {
                 <Grid container>
                     {dataNewPage.map((item, index) => (
                         <Grid
+                            item
                             key={index}
                             xs={4}
                             className="new-page__container__card"

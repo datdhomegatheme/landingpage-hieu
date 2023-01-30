@@ -19,8 +19,8 @@ function Footer() {
             <footer className="footer">
                 <div className="footer__container d-flex">
                     <Grid className={"footer__container__custom"} container>
-                        <Grid sm={4}>
-                            <img src={Images.logo} />
+                        <Grid item sm={4}>
+                            <img src={Images.logo} alt={"logo"} />
                             <p>
                                 Holisticly empower premium architectures without
                                 value-added ideas. Seamlessly evolve
@@ -41,8 +41,8 @@ function Footer() {
                                 </a>
                             </div>
                         </Grid>
-                        <Grid container sm={8}>
-                            <Grid sm={4}>
+                        <Grid container item sm={8}>
+                            <Grid item sm={4}>
                                 <h2>Resources</h2>
                                 <ul>
                                     <li className="text-gray">
@@ -62,7 +62,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </Grid>
-                            <Grid sm={4}>
+                            <Grid item sm={4}>
                                 <h2>Company</h2>
                                 <ul>
                                     <li>
@@ -82,7 +82,7 @@ function Footer() {
                                     </li>
                                 </ul>
                             </Grid>
-                            <Grid sm={4}>
+                            <Grid item sm={4}>
                                 <h2>Location</h2>
                                 <ul>
                                     <li>
@@ -116,14 +116,14 @@ function Footer() {
                             className={"footer-bottom__container__custom-grid"}
                             container
                         >
-                            <Grid xs={6} sm={6} md={7} lg={7} xl={7}>
+                            <Grid item xs={6} sm={6} md={7} lg={7} xl={7}>
                                 <p>
                                     © ThemeTags Design Agency, All rights
                                     reserved
                                 </p>
                             </Grid>
 
-                            <Grid xs={6} sm={6} md={5} lg={5} xl={5}>
+                            <Grid item xs={6} sm={6} md={5} lg={5} xl={5}>
                                 <ul>
                                     <li>
                                         <a href="/#">Terms</a>

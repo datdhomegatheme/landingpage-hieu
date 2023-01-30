@@ -3,8 +3,6 @@ import {
     CardContent,
     CardHeader,
     Collapse,
-    IconButton,
-    styled,
     Typography,
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
@@ -28,12 +26,12 @@ const PackagePageCard = ({ icon, title, content }) => {
                         expanded === false ? (
                             <AddIcon
                                 className="card__icon"
-                                expand={expanded}
+                                expand={"true"}
                             ></AddIcon>
                         ) : (
                             <RemoveIcon
                                 className="card__icon"
-                                expand={expanded}
+                                expand={"true"}
                             ></RemoveIcon>
                         )
                     }

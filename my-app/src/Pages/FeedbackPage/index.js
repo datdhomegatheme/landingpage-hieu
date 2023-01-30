@@ -4,7 +4,6 @@ import {
     CardHeader,
     Avatar,
     CardContent,
-    Typography,
     Modal,
     Box,
 } from "@mui/material";
