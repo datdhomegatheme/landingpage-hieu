@@ -1,4 +1,4 @@
-import { promoItems } from "../../DataItems";
+import { promoItems } from "../../component/DataItems";
 
 function PromoPage() {
     return (

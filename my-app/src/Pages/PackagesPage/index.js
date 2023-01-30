@@ -1,4 +1,4 @@
-import { dataPackages, packageItems } from "../../DataItems";
+import { dataPackages, packageItems } from "../../component/DataItems";
 
 import React from "react";
 import PackagePageCard from "../../component/PackagePageCard";

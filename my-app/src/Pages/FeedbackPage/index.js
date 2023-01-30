@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import Images from "../../assets/Images";
 
-import { dataClients, dataIconClient } from "../../DataItems";
+import { dataClients, dataIconClient } from "../../component/DataItems";
 
 import SwipeableViews from "react-swipeable-views";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";

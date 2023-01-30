@@ -1,4 +1,4 @@
-import { dataScreenshots } from "../../DataItems";
+import { dataScreenshots } from "../../component/DataItems";
 import React from "react";
 import Carousel from "react-grid-carousel";
 

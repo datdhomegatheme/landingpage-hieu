@@ -3,7 +3,7 @@ import Images from "../../assets/Images";
 import MenuItems from "./MenuItems";
 import MiniMenuItems from "./MiniMenuItems";
 import MenuIcon from "@mui/icons-material/Menu";
-import { headerItems } from "../../DataItems";
+import { headerItems } from "../../component/DataItems";
 
 function Header() {
     const showMenuItems = () => {

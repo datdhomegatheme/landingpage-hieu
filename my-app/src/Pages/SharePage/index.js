@@ -1,5 +1,5 @@
 import Images from "../../assets/Images";
-import { aboutItems } from "../../DataItems";
+import { aboutItems } from "../../component/DataItems";
 function SharePage() {
     return (
         <div className="share-page">

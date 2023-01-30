@@ -1,4 +1,4 @@
-import { dataMembers } from "../../DataItems";
+import { dataMembers } from "../../component/DataItems";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";

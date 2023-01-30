@@ -1,6 +1,6 @@
 import { Card, CardMedia, Grid, CardContent } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { dataNewPage } from "../../DataItems";
+import { dataNewPage } from "../../component/DataItems";
 
 function NewsPage() {
     return (
