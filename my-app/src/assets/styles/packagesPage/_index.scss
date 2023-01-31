@@ -3,6 +3,7 @@
     height: auto;
     position: relative;
 
+
     &:before {
         content: "";
         position: absolute;
@@ -71,6 +72,7 @@
 
                 p {
                     color: #8492a6;
+                    line-height: 0px;
                 }
 
 
@@ -94,6 +96,20 @@
                     &:hover {
                         color: white;
                         background-color: #6730e3;
+                    }
+                }
+            }
+
+            .package-standard {
+                border-top: 4px solid #9629e6;
+
+                .package-standard__btn {
+                    color: white;
+                    background-color: #6730e3;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: #6730e3;
                     }
                 }
             }
