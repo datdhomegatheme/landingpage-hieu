@@ -11,7 +11,9 @@
         align-items: center;
 
         h2 {
-            line-height: 40px;
+            line-height: 30px;
+            font-size: 20px;
+            font-weight: 300;
         }
 
         .icon-clients {
@@ -33,32 +35,61 @@
         .feedback-page__container__left {
             padding: 40px 0 0 40px;
             cursor: pointer;
+            margin-bottom: 50px;
 
-            .card-avatar {
-                width: 60px;
-                height: 60px;
+            .feedback-page__container__left__carousel {
+
+                .rec-arrow-left,
+                .rec-arrow-right {
+                    position: relative;
+                    z-index: 1;
+                    top: 114px;
+                    width: 40px;
+                    height: 40px;
+                    min-width: 40px;
+                    line-height: 1px;
+                }
+
+                .rec-arrow-left {
+                    left: 66px;
+                }
+
+                .rec-arrow-right {
+                    right: 492px;
+                }
+
+                .card-avatar {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                h1 {
+                    line-height: 10px;
+                }
+
+                h2 {
+                    font-size: 15px;
+                    line-height: 10px;
+                }
             }
 
-            h1 {
-                line-height: 10px;
-            }
 
-            h2 {
-                font-size: 15px;
-                line-height: 10px;
-            }
+
 
         }
 
 
         .card-content {
             padding-top: 0px;
+            border: none;
+            height: 150px;
 
             p {
                 img {
                     width: 30px;
                     height: auto;
                     margin-right: 8px;
+
                 }
             }
         }

@@ -3,7 +3,6 @@
     height: auto;
     position: relative;
 
-
     &:before {
         content: "";
         position: absolute;
@@ -25,6 +24,8 @@
         flex-direction: column;
 
         p {
+            margin: 48px 0;
+
             span {
                 a {
                     color: #9629e6;
@@ -111,6 +112,7 @@
                 border: 1px solid #ebebeb;
                 border-radius: 5px;
                 height: fit-content;
+
 
                 .card__extend {
                     box-shadow: none;

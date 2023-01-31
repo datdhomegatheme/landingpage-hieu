@@ -11,21 +11,22 @@ import Images from "../../assets/Images";
 
 import { dataClients, dataIconClient } from "../../component/DataItems";
 
-import SwipeableViews from "react-swipeable-views";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import React from "react";
 import ReactPlayer from "react-player";
+import Carousel from "react-elastic-carousel";
 
 function FeedbackPage() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
     return (
         <>
             <section className="feedback-page d-flex">
                 <div className="feedback-page__container">
                     <Grid container>
-                        <Grid xs={12} sm={6} md={6} lg={6} xl={6}>
+                        <Grid item xs={12} sm={6}>
                             <h1>What Clients Say About Us</h1>
                             <h2 className="text-gray">
                                 Rapidiously morph transparent internal or
@@ -42,16 +43,14 @@ function FeedbackPage() {
                             </ul>
                         </Grid>
                         <Grid
+                            item
                             xs={12}
                             sm={6}
-                            md={6}
-                            lg={6}
-                            xl={6}
                             className="feedback-page__container__left"
                         >
-                            <SwipeableViews
-                                animateTransitions={2}
-                                enableMouseEvents
+                            <Carousel
+                                className="feedback-page__container__left__carousel"
+                                pagination={false}
                             >
                                 {dataClients.map((item, index) => (
                                     <Card key={index}>
@@ -86,7 +85,7 @@ function FeedbackPage() {
                                         </CardContent>
                                     </Card>
                                 ))}
-                            </SwipeableViews>
+                            </Carousel>
                         </Grid>
                     </Grid>
                 </div>
