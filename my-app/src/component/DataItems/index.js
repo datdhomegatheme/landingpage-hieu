@@ -303,3 +303,36 @@ export const dataIconClient = [
     { src: Images.spotify, alt: "spotify logo" },
     { src: Images.payPal, alt: "paypal" },
 ];
+
+export const dataTrustCompany = [
+    { img: Images.payPal, alt: "payPal" },
+    {
+        img: Images.spotify,
+        alt: "spotify",
+    },
+    { img: Images.airBnb, alt: "airBnb" },
+    {
+        img: Images.amazon,
+        alt: "amazon",
+    },
+    { img: Images.shopBot, alt: "shopBot" },
+    {
+        img: Images.slack,
+        alt: "slack",
+    },
+    { img: Images.payPal, alt: "payPal" },
+    {
+        img: Images.spotify,
+        alt: "spotify",
+    },
+    { img: Images.airBnb, alt: "airBnb" },
+    {
+        img: Images.amazon,
+        alt: "amazon",
+    },
+    { img: Images.shopBot, alt: "shopBot" },
+    {
+        img: Images.slack,
+        alt: "slack",
+    },
+];

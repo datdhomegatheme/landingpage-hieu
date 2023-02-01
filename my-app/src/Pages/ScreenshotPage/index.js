@@ -25,11 +25,7 @@ function ScreenshotPage() {
                         >
                             {dataScreenshots.map((item, index) => (
                                 <div key={index}>
-                                    <img
-                                        src={item.img}
-                                        id={item.id}
-                                        alt="screenshots"
-                                    />
+                                    <img src={item.img} alt={item} />
                                 </div>
                             ))}
                         </Carousel>

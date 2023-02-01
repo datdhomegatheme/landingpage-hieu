@@ -1,6 +1,6 @@
 .trust-page {
   position: relative;
-  padding-top: 100px;
+  padding: 100px 0;
 
   .trust-page__container {
     margin: 0px 264px;
@@ -14,32 +14,60 @@
       align-items: center;
       max-width: 100%;
 
-      .carousel__parent {
-        display: block;
-        width: 100%;
-        z-index: 1;
 
-        .carousel__parent__stage-outer {
-          position: relative;
-          overflow: hidden;
+      .carousel {
+        width: 1400px;
+        padding: 26px, 0;
 
-          .carousel__parent__stage-main {
-            transform: translate3d(-3281px, 0px, 0px);
-            transition: all 4.5s linear 0s;
-            width: 4813px;
+        .carousel__img {
+          height: auto;
+          width: 122px;
+          transform: scale(1);
+          transition: transform .5s ease-in;
 
-            .stage-main__item {
-              height: 100%;
-              width: auto;
-
-              .item__img {
-                width: 122px;
-                height: 36px;
-              }
-            }
+          &:hover {
+            transform: scale(1.2);
+            transition: transform .5s ease-in;
           }
         }
       }
+
+
     }
+
+    .trust-page__container__subscribe {
+      position: absolute;
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding-top: 100px;
+
+      .subscribe__input {
+        width: 658px;
+        padding: 20px 15px;
+        border-radius: 30px;
+        border: 1px solid #ebebeb;
+        z-index: $z-index-button;
+        position: relative;
+
+        &:focus-visible {
+          border: 1px solid #6730e3;
+        }
+      }
+
+      .subscribe__btn {
+        position: absolute;
+        right: 14px;
+        width: 98px;
+        height: 46px;
+      }
+    }
+
+
+
+
   }
 }
