@@ -8,7 +8,7 @@
     position: sticky;
     z-index: $z-index-header;
     top: 0;
-    width: 100%;
+    width: 100vw;
 
     .navbar__container {
         background: transparent;
@@ -17,7 +17,7 @@
         padding: 0 256px;
         transition: all 0.4s ease-in-out;
 
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
             background: $navbar-bg-secondary;
             transition: all .4 ease-in-out;
             padding: 0 20px;
@@ -205,7 +205,7 @@
 
 
 
-        @media (max-width: 992px) {
+        @media (max-width: 991px) {
 
             .navbar__toggle {
                 display: flex;

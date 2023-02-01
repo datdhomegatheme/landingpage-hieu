@@ -30,8 +30,8 @@ const TrustPage = () => {
                 </h2>
                 <div className={"trust-page__container__carousel"}>
                     <Carousel
-                        enableAutoPlay={500}
-                        showArrows={0}
+                        enableAutoPlay={true}
+                        showArrows={false}
                         itemsToShow={6}
                         className="carousel"
                         ref={carouselRef}
