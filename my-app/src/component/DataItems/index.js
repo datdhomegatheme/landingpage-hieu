@@ -197,6 +197,30 @@ export const dataScreenshots = [
         id: "c6",
         img: Images.screenshot06,
     },
+    {
+        id: "c1",
+        img: Images.screenshot01,
+    },
+    {
+        id: "c2",
+        img: Images.screenshot02,
+    },
+    {
+        id: "c3",
+        img: Images.screenshot03,
+    },
+    {
+        id: "c4",
+        img: Images.screenshot04,
+    },
+    {
+        id: "c5",
+        img: Images.screenshot05,
+    },
+    {
+        id: "c6",
+        img: Images.screenshot06,
+    },
 ];
 
 export const dataMembers = [
