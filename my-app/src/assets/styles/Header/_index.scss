@@ -17,7 +17,8 @@
         padding: 0 256px;
         transition: all 0.4s ease-in-out;
 
-        @media (max-width: 991px) {
+
+        @include media-breakpoint-up(lg) {
             background: $navbar-bg-secondary;
             transition: all .4 ease-in-out;
             padding: 0 20px;
@@ -357,4 +358,18 @@
     }
 
 
+}
+
+
+@media (min-width: 768px) and (max-with: 1365px) {
+    .navbar {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 0;
+
+    }
 }

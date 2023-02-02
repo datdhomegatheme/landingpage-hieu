@@ -3,6 +3,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import RedditIcon from "@mui/icons-material/Reddit";
+import { Grid } from "@mui/material";
 
 function TeamPage() {
     return (
@@ -14,9 +15,9 @@ function TeamPage() {
                     lead pages, foster market positioning products without demos
                     and checkouts.
                 </h2>
-                <div className="container__img-member d-flex ">
+                <Grid container className="container__img-member d-flex ">
                     {dataMembers.map((item, index) => (
-                        <div className="img-bg" key={index}>
+                        <Grid item sm={3} className="img-bg" key={index}>
                             <img src={item.avatar} alt="avatar member" />
                             <div className="member-detail d-flex">
                                 <h1>{item.name}</h1>
@@ -28,9 +29,9 @@ function TeamPage() {
                                     <SportsBasketballIcon />
                                 </div>
                             </div>
-                        </div>
+                        </Grid>
                     ))}
-                </div>
+                </Grid>
             </div>
         </section>
     );

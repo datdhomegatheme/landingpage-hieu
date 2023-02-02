@@ -2,6 +2,7 @@ import { dataPackages, packageItems } from "../../component/DataItems";
 
 import React from "react";
 import PackagePageCard from "../../component/PackagePageCard";
+import { Grid } from "@mui/material";
 
 function PackagesPage() {
     return (
@@ -18,7 +19,7 @@ function PackagesPage() {
                             high-yield processes rather than user friendly.
                         </h2>
                     </div>
-                    <div className="package__content d-flex">
+                    <Grid container className="package__content d-flex">
                         {packageItems.map((item, index) => (
                             <div key={index}>
                                 {item.type === "Standard" ? (
@@ -80,7 +81,7 @@ function PackagesPage() {
                                 )}
                             </div>
                         ))}
-                    </div>
+                    </Grid>
                     <p className="text-gray">
                         If you need custom services or Need more?{" "}
                         <span>

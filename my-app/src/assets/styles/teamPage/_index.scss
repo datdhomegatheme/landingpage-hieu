@@ -20,7 +20,7 @@
 
         .container__img-member {
             justify-content: space-between;
-            width: 100%;
+            width: 100vh;
             position: relative;
 
             .img-bg {
@@ -28,9 +28,10 @@
 
                 img {
                     margin: 50px 0;
-                    display: block;
-                    height: 308px;
-                    width: 308px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 240px;
+                    width: 240px;
                     overflow: hidden;
                     border-radius: 50%;
                 }
@@ -41,8 +42,8 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    height: 308px;
-                    width: 308px;
+                    height: 240px;
+                    width: 240px;
                     border-radius: 50%;
                     background-image: linear-gradient(to right, rgba(32, 40, 119, 0.85), rgba(55, 46, 149, 0.9), rgba(83, 49, 177, 0.85), rgba(114, 48, 205, 0.8), rgba(150, 41, 230, 0.8));
                     opacity: 0;

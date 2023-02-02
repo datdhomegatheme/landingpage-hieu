@@ -1,4 +1,5 @@
 import { promoItems } from "../../component/DataItems";
+import { Grid } from "@mui/material";
 
 function PromoPage() {
     return (
@@ -13,17 +14,17 @@ function PromoPage() {
                             interoperable imperatives rather.
                         </h2>
                     </div>
-                    <div className="promo__content d-flex">
+                    <Grid container className="promo__content d-flex">
                         {promoItems.map((item) => (
-                            <div key={item.id} className="content__bg">
+                            <Grid key={item.id} className="content__bg">
                                 <div className="bg-icon d-flex">
                                     {item.icon}
                                 </div>
                                 <h2>{item.title}</h2>
                                 <p className="text-gray">{item.content}</p>
-                            </div>
+                            </Grid>
                         ))}
-                    </div>
+                    </Grid>
                 </div>
             </div>
         </>

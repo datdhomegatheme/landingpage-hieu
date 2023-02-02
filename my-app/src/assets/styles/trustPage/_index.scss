@@ -1,9 +1,8 @@
 .trust-page {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 264px;
 
   .trust-page__container {
-    margin: 0px 264px;
     text-align: center;
 
     .trust-page__container__content {
@@ -12,12 +11,11 @@
 
     .trust-page__container__carousel {
       align-items: center;
-      max-width: 100%;
 
 
       .carousel {
-        width: 1400px;
         padding: 26px, 0;
+        width: 1440px;
 
         .carousel__img {
           height: auto;
@@ -67,5 +65,24 @@
     }
 
 
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .trust-page {
+    padding: 0;
+
+  }
+}
+
+@media (max-with: 1365px) {
+  .trust-page {
+    padding: 0 80px;
+
+    .carousel {
+      width: 700px;
+    }
   }
 }

@@ -25,7 +25,7 @@ function ContactPage() {
                     </Grid>
                     <Grid item className={"container__reach-us"} sm={7}>
                         <h1 className="reach-us__title">Reach us quickly</h1>
-                        <form className="contact-form">
+                        <Grid container className="contact-form">
                             <input
                                 className="contact-input-medium"
                                 placeholder="Enter name"
@@ -50,7 +50,7 @@ function ContactPage() {
                             <button className="contact-btn btn">
                                 Send Message
                             </button>
-                        </form>
+                        </Grid>
                     </Grid>
                 </Grid>
             </div>

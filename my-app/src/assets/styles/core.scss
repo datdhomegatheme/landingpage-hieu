@@ -1,4 +1,15 @@
 //core scss
+
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+
+
 @import 'variables';
 
 body {
@@ -96,7 +107,6 @@ p {
 .container {
   padding: 48px 0;
   margin: 0px 264px;
-  height: 90%;
   justify-content: space-between;
   position: relative;
   z-index: $z-index-default;
