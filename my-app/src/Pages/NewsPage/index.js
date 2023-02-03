@@ -12,7 +12,7 @@ function NewsPage() {
                     emerging leadership. Distinctively <br /> transform tactical
                     methods of resource sucking core.
                 </h2>
-                <Grid container>
+                <Grid xs={12} container>
                     {dataNewPage.map((item, index) => (
                         <Grid
                             item
@@ -20,13 +20,19 @@ function NewsPage() {
                             xs={4}
                             className="new-page__container__card"
                         >
+                            <div className="new-page__container__wrapper__chip">
+                                <span className="new-page__container__chip">
+                                    {item.type}
+                                </span>
+                            </div>
+
                             <Card>
                                 <CardMedia
                                     className="card__img"
                                     title="Lifestyle"
                                     image={item.image}
                                 />
-                                <CardContent>
+                                <CardContent className="card__wrapper">
                                     <ul className="card__interactions text-gray">
                                         <li>{item.date}</li>
                                         <li>{item.comments}</li>
@@ -44,9 +50,6 @@ function NewsPage() {
                                     </a>
                                 </CardContent>
                             </Card>
-                            <span className="new-page__container__chip">
-                                {item.type}
-                            </span>
                         </Grid>
                     ))}
                 </Grid>

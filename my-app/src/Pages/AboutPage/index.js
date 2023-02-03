@@ -4,9 +4,9 @@ import { Grid } from "@mui/material";
 
 function AboutPage() {
     return (
-        <div className="about">
-            <Grid container className="about__container  d-flex">
-                <div className="container__left">
+        <div className="about d-flex">
+            <Grid xs={12} container className="about__container  d-flex">
+                <Grid xs={12} md={7} item className="container__left">
                     <h1>Use Your Android or ios Device to Manage Everything</h1>
                     {aboutItems.map((item, indexAbout) => (
                         <div key={indexAbout}>
@@ -18,10 +18,10 @@ function AboutPage() {
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className="container__right">
+                </Grid>
+                <Grid item xs={12} md={5} className="container__right d-flex">
                     <img alt="icon mobile" src={Images.iconMobile} />
-                </div>
+                </Grid>
             </Grid>
         </div>
     );

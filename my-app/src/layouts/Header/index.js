@@ -13,31 +13,33 @@ function Header() {
     return (
         <>
             <nav
-                className="navbar
+                className="navbar d-flex
             "
             >
                 <div
                     id="navbar__container"
-                    className="d-flex navbar__container
+                    className="navbar__container d-flex
             "
                 >
-                    <a href={"/#"}>
-                        <img
-                            src={Images.logo}
-                            className={"logo "}
-                            alt={"logo"}
-                        />
-                    </a>
-                    <MenuItems items={headerItems} />
+                    <div className="d-flex container__wrapper">
+                        <a href={"/#"}>
+                            <img
+                                src={Images.logo}
+                                className={"logo "}
+                                alt={"logo"}
+                            />
+                        </a>
+                        <MenuItems items={headerItems} />
 
-                    <button
-                        id={"navbar__toggle"}
-                        onClick={showMenuItems}
-                        className="navbar__toggle d-flex"
-                        type="button"
-                    >
-                        <MenuIcon className="toggle__icon" />
-                    </button>
+                        <button
+                            id={"navbar__toggle"}
+                            onClick={showMenuItems}
+                            className="navbar__toggle d-flex"
+                            type="button"
+                        >
+                            <MenuIcon className="toggle__icon" />
+                        </button>
+                    </div>
                 </div>
                 {/*logo*/}
                 <MiniMenuItems items={headerItems} />

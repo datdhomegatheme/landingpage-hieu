@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 function PromoPage() {
     return (
         <>
-            <div className="promo">
+            <div className="promo d-flex">
                 <div className="promo__container d-flex">
                     <div className="promo__title">
                         <h1>Why Peoples Love AppCo?</h1>
@@ -14,9 +14,14 @@ function PromoPage() {
                             interoperable imperatives rather.
                         </h2>
                     </div>
-                    <Grid container className="promo__content d-flex">
+                    <Grid sx={12} container className="promo__content d-flex">
                         {promoItems.map((item) => (
-                            <Grid key={item.id} className="content__bg">
+                            <Grid
+                                md={3}
+                                item
+                                key={item.id}
+                                className="content__bg"
+                            >
                                 <div className="bg-icon d-flex">
                                     {item.icon}
                                 </div>

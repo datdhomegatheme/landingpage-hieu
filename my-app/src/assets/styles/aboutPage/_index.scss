@@ -12,12 +12,16 @@
     }
 
     .about__container {
-        padding: 100px 265px;
+        flex-basis: 72%;
         justify-content: space-between;
+
+        @include media-breakpoint-down(xxl) {
+            flex-basis: 95%;
+        }
+
 
 
         .container__left {
-            width: 640px;
 
             .left__content {
                 display: flex;
@@ -30,10 +34,8 @@
             }
         }
 
-        .container__right {
-            margin-right: 200px;
+        .container__right {}
 
-        }
 
 
     }

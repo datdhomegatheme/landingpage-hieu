@@ -1,13 +1,18 @@
 .share-page {
     background-color: white;
     width: 100%;
-    display: flex;
 
     .share-page__container {
-        width: 100%;
+        flex-basis: 72%;
         padding: 100px 0;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(xxl) {
+            flex-basis: 95%;
+        }
 
         .container__left {
+
             img {
                 width: 418px;
                 height: auto;

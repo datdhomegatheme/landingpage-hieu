@@ -17,56 +17,71 @@
                 height: 263px;
             }
 
-            .card__interactions {
-                display: flex;
+            .card__wrapper {
+                min-height: 244px;
 
-                li {
-                    margin-right: 4px;
-                }
-            }
+                .card__interactions {
+                    display: flex;
 
-            .card__read-more {
-                display: flex;
-                align-items: center;
-                color: black;
-                font-weight: 700;
-
-                .read-more__text {
-                    font-size: 14px;
+                    li {
+                        margin-right: 4px;
+                    }
                 }
 
-                .read-more__icon {
-                    width: 25px;
-                    height: auto;
-                    color: #707070;
-                }
+                .card__read-more {
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    font-weight: 700;
 
-                &:hover {
-                    color: #202877;
+                    .read-more__text {
+                        font-size: 14px;
+                    }
 
                     .read-more__icon {
-                        transition: .3s;
-                        transform: translateX(3px);
-                        margin-left: 8px;
+                        width: 25px;
+                        height: auto;
+                        color: #707070;
+                    }
+
+                    &:hover {
+                        color: #202877;
+
+                        .read-more__icon {
+                            transition: .3s;
+                            transform: translateX(3px);
+                            margin-left: 8px;
+                        }
                     }
                 }
             }
 
-            .new-page__container__chip {
-                position: absolute;
-                top: 166px;
-                margin-left: 332px;
-                padding: 1px 12px;
-                background: #0d6efd;
-                min-width: 53px;
-                height: 20px;
-                line-height: 20px;
-                text-align: center;
-                border-radius: 16px;
-                color: white;
-                font-weight: 700;
-                font-size: 13px;
+
+
+
+
+            .new-page__container__wrapper__chip {
+                display: flex;
+                flex-direction: row-reverse;
+                top: 26px;
+                right: 12px;
+                position: relative;
+
+                .new-page__container__chip {
+                    position: relative;
+                    padding: 1px 12px;
+                    background: #0d6efd;
+                    min-width: 53px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    border-radius: 16px;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 13px;
+                }
             }
+
 
         }
     }

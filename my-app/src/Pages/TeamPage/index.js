@@ -15,9 +15,13 @@ function TeamPage() {
                     lead pages, foster market positioning products without demos
                     and checkouts.
                 </h2>
-                <Grid container className="container__img-member d-flex ">
+                <Grid
+                    xs={12}
+                    container
+                    className="container__img-member d-flex "
+                >
                     {dataMembers.map((item, index) => (
-                        <Grid item sm={3} className="img-bg" key={index}>
+                        <Grid item className="img-bg" key={index}>
                             <img src={item.avatar} alt="avatar member" />
                             <div className="member-detail d-flex">
                                 <h1>{item.name}</h1>

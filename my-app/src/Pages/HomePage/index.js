@@ -1,5 +1,4 @@
 import Images from "../../assets/Images";
-// import "../../Assets/Styles/HomePage/_index.scss";
 import Img from "../../assets/Images/homePage/hero-bg-shape-1.svg";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import { Grid } from "@mui/material";
@@ -7,12 +6,12 @@ import { Grid } from "@mui/material";
 function HomePage() {
     return (
         <>
-            <div className="home">
-                <Grid container xs={12} className="homePage__container d-flex">
+            <div className="home d-flex">
+                <Grid container xs={12} className="homePage__container">
                     <Grid
                         item
-                        xs={12}
-                        xl={6}
+                        sm={12}
+                        md={6}
                         className="homePage__container__left d-flex"
                     >
                         <h1 className="left__title">
@@ -48,8 +47,8 @@ function HomePage() {
                         </div>
                     </Grid>
                     <Grid
-                        xs={12}
-                        xl={6}
+                        sm={12}
+                        md={6}
                         item
                         className="container__right d-flex"
                     >

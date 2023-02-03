@@ -1,6 +1,9 @@
 .trust-page {
   position: relative;
   padding: 100px 264px;
+  overflow: hidden;
+
+
 
   .trust-page__container {
     text-align: center;
@@ -16,6 +19,8 @@
       .carousel {
         padding: 26px, 0;
         width: 1440px;
+
+
 
         .carousel__img {
           height: auto;
@@ -65,24 +70,5 @@
     }
 
 
-  }
-}
-
-
-
-@media (max-width: 767px) {
-  .trust-page {
-    padding: 0;
-
-  }
-}
-
-@media (max-with: 1365px) {
-  .trust-page {
-    padding: 0 80px;
-
-    .carousel {
-      width: 700px;
-    }
   }
 }
