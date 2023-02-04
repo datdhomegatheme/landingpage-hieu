@@ -45,7 +45,7 @@
                 .rec-arrow-right {
                     position: relative;
                     z-index: 1;
-                    top: 114px;
+                    top: 44%;
                     width: 40px;
                     height: 40px;
                     min-width: 40px;
@@ -53,11 +53,47 @@
                 }
 
                 .rec-arrow-left {
-                    left: 66px;
+                    left: 10%;
+
+                    @include media-breakpoint-down(xl) {
+                        left: 12%;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        left: 14%;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        left: 10%;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        left: 12%;
+                    }
+
+
+
+
                 }
 
                 .rec-arrow-right {
-                    right: 492px;
+                    right: 76%;
+
+                    @include media-breakpoint-down(xl) {
+                        right: 72%;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        right: 66%;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        right: 78%;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        right: 72%;
+                    }
                 }
 
                 .card-avatar {

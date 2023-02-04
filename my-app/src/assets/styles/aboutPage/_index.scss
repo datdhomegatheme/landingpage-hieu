@@ -9,6 +9,10 @@
         height: 100%;
         background-size: cover;
 
+        @include media-breakpoint-down(md) {
+            height: 140%
+        }
+
     }
 
     .about__container {
@@ -30,6 +34,13 @@
 
 
             }
+        }
+
+        .container__right {
+            @include media-breakpoint-down(md) {
+                padding-bottom: 10%;
+            }
+
         }
 
 

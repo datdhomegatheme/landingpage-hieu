@@ -54,10 +54,14 @@
                     }
 
                     &:hover {
-                        color: #202877;
+
+                        .read-more__text,
+                        .read-more__icon {
+                            color: #202877;
+                            transition: .3s;
+                        }
 
                         .read-more__icon {
-                            transition: .3s;
                             transform: translateX(3px);
                             margin-left: 8px;
                         }
