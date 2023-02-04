@@ -35,15 +35,19 @@
                         border: #6634e4 solid 1px;
                         transition: 0.4s;
                     }
+
                 }
 
                 .contact-input-large {
                     padding: 14px 12px;
-                    width: 90%;
+                    width: 95%;
                     height: 158px;
                     border: #ebebeb solid 1px;
                     border-radius: 6px;
                     transition: 0.4s;
+                    @include media-breakpoint-down(xl){
+                        width:90%
+                    }
 
                     &:focus {
                         border: #6634e4 solid 1px;

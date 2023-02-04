@@ -3,39 +3,38 @@
   padding: 100px 264px;
   overflow: hidden;
 
-
-
   .trust-page__container {
     text-align: center;
 
     .trust-page__container__content {
       line-height: 2;
+      @include media-breakpoint-down(lg){
+        padding: 0 400px;
+      }
+      @include media-breakpoint-down(md){
+        padding: 0 500px;
+      }
     }
 
     .trust-page__container__carousel {
       align-items: center;
 
-
       .carousel {
-        padding: 26px, 0;
+        padding: 26px 0;
         width: 1440px;
-
-
 
         .carousel__img {
           height: auto;
           width: 122px;
           transform: scale(1);
-          transition: transform .5s ease-in;
+          transition: transform 0.5s ease-in;
 
           &:hover {
             transform: scale(1.2);
-            transition: transform .5s ease-in;
+            transition: transform 0.5s ease-in;
           }
         }
       }
-
-
     }
 
     .trust-page__container__subscribe {
@@ -68,7 +67,5 @@
         height: 46px;
       }
     }
-
-
   }
 }
