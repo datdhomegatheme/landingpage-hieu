@@ -11,6 +11,11 @@
             flex-basis: 95%;
         }
 
+        @media (max-width: 1055px) {
+            justify-content: center;
+
+        }
+
         .container__left {
 
             img {
@@ -22,6 +27,8 @@
         }
 
         .container__right {
+            padding-left: 2%;
+
             line-height: 40px;
 
             .right__icon {
@@ -40,6 +47,3 @@
     }
 
 }
-
-
-@media (min-width: 768px) and (max-with: 1365px) {}

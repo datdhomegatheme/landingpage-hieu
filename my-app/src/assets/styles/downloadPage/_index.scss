@@ -2,7 +2,7 @@
     position: relative;
     background: $bg-home;
     width: 100%;
-    height: 665px;
+    height: 100%;
     z-index: $z-index-default;
     color: white;
 
@@ -13,14 +13,17 @@
         z-index: $z-index-bg-img;
         opacity: 0.9;
         width: 100%;
-        height: 665px;
+        height: 100%;
     }
 
     .download-page__container {
-        width: 100%;
-        margin: 0px 264px;
+        width: 72%;
         justify-content: center;
         align-items: center;
+
+        @include media-breakpoint-down(xxl) {
+            width: 95%;
+        }
 
         .container__custom {
             margin: 0;
@@ -87,12 +90,15 @@
 
 
 
+        .grid__app-img {
+            align-items: flex-end;
 
-        .img-app-hand-top {
-            width: 417px;
-            height: 565px;
-            position: relative;
-            top: 51px;
+            .img-app-hand-top {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                padding-top: 30%;
+            }
         }
 
 

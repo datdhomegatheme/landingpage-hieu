@@ -7,7 +7,7 @@ import { Grid } from "@mui/material";
 
 function TeamPage() {
     return (
-        <section className="team-page">
+        <section className="team-page d-flex">
             <div className="team-page__container d-flex">
                 <h1>Our Team Members</h1>
                 <h2 className="text-gray">

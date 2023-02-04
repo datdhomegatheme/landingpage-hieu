@@ -3,21 +3,27 @@
     background: #f4f7fa;
     padding: 100px 0;
     margin-top: 100px;
+    display: flex;
 
-    .container {
-        margin: 0px 265px;
+    .contact-page__container {
+        width: 72%;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(xxl) {
+            width: 95%;
+        }
 
         .container__reach-us {
-            padding-left: 8px;
+            margin-top: 2%;
+            padding-left: 2%;
 
             .reach-us__title {
                 font-size: 20px;
-                line-height: 18px;
             }
 
             .contact-form {
                 .contact-input-medium {
-                    width: 335px;
+                    width: 90%;
                     height: 26px;
                     padding: 14px 12px;
                     margin: 10px 14px 10px 0;
@@ -33,7 +39,7 @@
 
                 .contact-input-large {
                     padding: 14px 12px;
-                    width: 712px;
+                    width: 90%;
                     height: 158px;
                     border: #ebebeb solid 1px;
                     border-radius: 6px;

@@ -10,7 +10,7 @@ import FeedbackPage from "./pages/FeedbackPage";
 import ScreenshotPage from "./pages/ScreenshotPage";
 import TeamPage from "./pages/TeamPage";
 import Footer from "./layouts/Footer";
-import ContactPage from "./pages/ContantPage";
+import ContactPage from "./pages/ContactPage";
 import NewsPage from "./pages/NewsPage";
 import TrustPage from "./pages/TrustPage";
 

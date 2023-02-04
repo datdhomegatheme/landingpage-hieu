@@ -7,9 +7,9 @@ import { Grid } from "@mui/material";
 function PackagesPage() {
     return (
         <>
-            <div className="package">
+            <div className="package d-flex">
                 <div className="package__container d-flex">
-                    <div className="package__title d-flex">
+                    <Grid container className="package__title d-flex">
                         <h1>
                             Affordable Pricing and Packages Choose your Best One
                         </h1>
@@ -18,10 +18,17 @@ function PackagesPage() {
                             synergistic infrastructures customize low-risk
                             high-yield processes rather than user friendly.
                         </h2>
-                    </div>
-                    <Grid container className="package__content d-flex">
+                    </Grid>
+                    <Grid container xs={12} className="package__content d-flex">
                         {packageItems.map((item, index) => (
-                            <div key={index}>
+                            <Grid
+                                className={"grid-container d-flex"}
+                                item
+                                xs={12}
+                                lg={6}
+                                xl={4}
+                                key={index}
+                            >
                                 {item.type === "Standard" ? (
                                     <div className="content__bg package-standard">
                                         <h2>{item.type}</h2>
@@ -79,7 +86,7 @@ function PackagesPage() {
                                         </button>
                                     </div>
                                 )}
-                            </div>
+                            </Grid>
                         ))}
                     </Grid>
                     <p className="text-gray">
@@ -89,17 +96,21 @@ function PackagesPage() {
                         </span>
                     </p>
 
-                    <div className="container__package-card">
+                    <Grid
+                        container
+                        sx={12}
+                        className="container__package-card d-flex"
+                    >
                         {dataPackages.map((item) => (
-                            <div key={item.id}>
+                            <Grid item key={item.id}>
                                 <PackagePageCard
                                     icon={item.icon}
                                     title={item.title}
                                     content={item.content}
                                 />
-                            </div>
+                            </Grid>
                         ))}
-                    </div>
+                    </Grid>
                 </div>
             </div>
         </>

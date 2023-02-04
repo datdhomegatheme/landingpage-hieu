@@ -5,15 +5,17 @@
 
     .screenshots-page__container {
         flex-direction: column;
-        margin: 0px 265px;
         position: relative;
+        width: 100%;
 
         h2 {
-            padding: 0 242px;
+            width: 48%;
             text-align-last: center;
             line-height: 40px;
 
         }
+
+        @include media-breakpoint-down(xxl) {}
 
 
         .screenshots-page__container__slider {

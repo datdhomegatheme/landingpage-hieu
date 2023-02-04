@@ -15,7 +15,8 @@
 .footer {
     position: relative;
     padding-top: 150px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background: $bg-footer;
     color: white;
@@ -44,11 +45,20 @@
     }
 
     .footer__container {
-        margin: 0px 265px;
+        width: 72%;
         flex-direction: row;
+
+        @include media-breakpoint-down(xxl) {
+            width: 95%;
+        }
+
 
         .footer__container__custom {
             margin: 0;
+
+            .grid__resources-company-location-wrapper {
+                justify-content: space-between;
+            }
 
             img {
                 margin-top: 20px;
@@ -80,12 +90,17 @@
     }
 
     .footer-bottom {
+        width: 100%;
         padding: 16px 0;
         margin-top: 48px;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
 
         .footer-bottom__container {
-            margin: 0px 265px;
+            width: 72%;
+
+            @include media-breakpoint-down(xxl) {
+                width: 95%;
+            }
 
             .footer-bottom__container__custom-grid {
                 margin: 0;

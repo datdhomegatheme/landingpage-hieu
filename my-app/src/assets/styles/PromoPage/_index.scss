@@ -22,14 +22,17 @@
             }
 
             h2 {
-                width: 747px;
-                height: 69px;
+                height: 10%;
             }
         }
 
 
         .promo__content {
             justify-content: space-between;
+
+            @media (max-width:757px) {
+                justify-content: center;
+            }
 
             .content__bg {
                 width: 340px;

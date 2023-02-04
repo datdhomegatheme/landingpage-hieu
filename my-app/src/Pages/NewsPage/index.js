@@ -4,7 +4,7 @@ import { dataNewPage } from "../../component/DataItems";
 
 function NewsPage() {
     return (
-        <section className="new-page">
+        <section className="new-page d-flex">
             <div className="new-page__container">
                 <h1>Our Latest News</h1>
                 <h2 className="new-page__container__content text-gray">
@@ -17,7 +17,8 @@ function NewsPage() {
                         <Grid
                             item
                             key={index}
-                            xs={4}
+                            xs={12}
+                            xl={4}
                             className="new-page__container__card"
                         >
                             <div className="new-page__container__wrapper__chip">

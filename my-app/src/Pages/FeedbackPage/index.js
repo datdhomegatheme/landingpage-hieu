@@ -26,7 +26,7 @@ function FeedbackPage() {
             <section className="feedback-page d-flex">
                 <div className="feedback-page__container">
                     <Grid container>
-                        <Grid item xs={12} sm={6}>
+                        <Grid item xs={12} md={6}>
                             <h1>What Clients Say About Us</h1>
                             <h2 className="text-gray">
                                 Rapidiously morph transparent internal or
@@ -45,7 +45,7 @@ function FeedbackPage() {
                         <Grid
                             item
                             xs={12}
-                            sm={6}
+                            md={6}
                             className="feedback-page__container__left"
                         >
                             <Carousel
