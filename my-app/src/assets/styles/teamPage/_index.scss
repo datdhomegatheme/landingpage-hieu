@@ -10,7 +10,8 @@
     .team-page__container {
         width: 72%;
         flex-direction: column;
-        @include media-breakpoint-down(xxl){
+
+        @include media-breakpoint-down(xxl) {
             width: 95%;
         }
 
@@ -25,6 +26,7 @@
             justify-content: space-between;
             width: 100vh;
             position: relative;
+
 
             .img-bg {
                 position: relative;

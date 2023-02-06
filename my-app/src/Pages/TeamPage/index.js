@@ -21,7 +21,13 @@ function TeamPage() {
                     className="container__img-member d-flex "
                 >
                     {dataMembers.map((item, index) => (
-                        <Grid item className="img-bg" key={index}>
+                        <Grid
+                            sm={6}
+                            xl={3}
+                            item
+                            className="img-bg d-flex"
+                            key={index}
+                        >
                             <img src={item.avatar} alt="avatar member" />
                             <div className="member-detail d-flex">
                                 <h1>{item.name}</h1>
