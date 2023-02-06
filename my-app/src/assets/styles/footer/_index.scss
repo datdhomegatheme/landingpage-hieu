@@ -58,6 +58,13 @@
 
             .grid__resources-company-location-wrapper {
                 justify-content: space-between;
+
+                @media (max-width: 727px) {
+                    a {
+
+                        overflow-wrap: anywhere;
+                    }
+                }
             }
 
             img {

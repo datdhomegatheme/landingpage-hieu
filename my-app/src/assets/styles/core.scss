@@ -149,7 +149,14 @@ p {
   padding: 4px;
 }
 
-
+$grid-breakpoints: (
+        xs: 0,
+        sm: 578px,
+        md: 751px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1401px
+) !default;
 
 @import 'header';
 @import 'homePage';
