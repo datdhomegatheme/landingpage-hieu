@@ -15,11 +15,11 @@ function PromoPage() {
                         </h2>
                     </div>
                     <Grid item container className="promo__content d-flex">
-                        {promoItems.map((item) => (
+                        {promoItems.map((item, index) => (
                             <Grid
                                 md={3}
                                 item
-                                key={item.id}
+                                key={index}
                                 className="content__bg"
                             >
                                 <div className="bg-icon d-flex">

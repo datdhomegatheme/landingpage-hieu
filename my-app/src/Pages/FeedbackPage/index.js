@@ -35,11 +35,11 @@ function FeedbackPage() {
                                 internal.
                             </h2>
                             <ul className="icon-clients">
-                                {dataIconClient.map((item) => {
-                                    <li>
+                                {dataIconClient.map((item, index) => (
+                                    <li key={index}>
                                         <img src={item.src} alt={item.alt} />
-                                    </li>;
-                                })}
+                                    </li>
+                                ))}
                             </ul>
                         </Grid>
                         <Grid

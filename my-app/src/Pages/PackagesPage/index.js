@@ -107,8 +107,8 @@ function PackagesPage() {
                         item
                         className="container__package-card d-flex"
                     >
-                        {dataPackages.map((item) => (
-                            <Grid item key={item.id}>
+                        {dataPackages.map((item, index) => (
+                            <Grid item key={index}>
                                 <PackagePageCard
                                     icon={item.icon}
                                     title={item.title}

@@ -1,6 +1,5 @@
 import { dataScreenshots } from "../../component/DataItems";
 import React from "react";
-import Carousel from "react-elastic-carousel";
 
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -31,11 +30,7 @@ function ScreenshotPage() {
                         >
                             {dataScreenshots.map((item, index) => (
                                 <div key={index}>
-                                    <img
-                                        className=""
-                                        src={item.img}
-                                        alt={item}
-                                    />
+                                    <img src={item.img} alt={item} />
                                 </div>
                             ))}
                         </OwlCarousel>
