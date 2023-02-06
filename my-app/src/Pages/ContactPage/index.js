@@ -4,7 +4,7 @@ function ContactPage() {
     return (
         <section className="contact-page d-flex">
             <div className="contact-page__container">
-                <Grid container sx={12}>
+                <Grid container xs={12} item>
                     <Grid item sm={5} className={"container__contact-info"}>
                         <h1 className="contact-title">Contact With Us</h1>
                         <p className="text-gray">
@@ -25,7 +25,7 @@ function ContactPage() {
                     </Grid>
                     <Grid item className={"container__reach-us"} xs={12} sm={7}>
                         <h1 className="reach-us__title">Reach us quickly</h1>
-                        <Grid container xs={12} className="contact-form">
+                        <Grid item container xs={12} className="contact-form">
                             <Grid item xs={12} lg={6}>
                                 <input
                                     className="contact-input-medium"

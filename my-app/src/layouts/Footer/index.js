@@ -19,6 +19,7 @@ function Footer() {
             <footer className="footer d-flex">
                 <div className="footer__container d-flex">
                     <Grid
+                        item
                         xs={12}
                         className={"footer__container__custom"}
                         container
@@ -124,6 +125,7 @@ function Footer() {
                     <div className="footer-bottom__container d-flex">
                         <Grid
                             className="footer-bottom__container__custom-grid"
+                            item
                             container
                             xs={12}
                         >

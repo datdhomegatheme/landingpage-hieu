@@ -7,7 +7,7 @@ function HomePage() {
     return (
         <>
             <div className="home d-flex">
-                <Grid container xs={12} className="homePage__container">
+                <Grid container item xs={12} className="homePage__container">
                     <Grid
                         item
                         sm={12}

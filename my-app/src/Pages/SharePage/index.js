@@ -5,11 +5,16 @@ import { Grid } from "@mui/material";
 function SharePage() {
     return (
         <div className="share-page d-flex">
-            <Grid container xs={12} className="share-page__container d-flex">
+            <Grid
+                item
+                container
+                xs={12}
+                className="share-page__container d-flex"
+            >
                 <Grid item className="container__left">
                     <img alt="icon mobile" src={Images.iconMobile2} />
                 </Grid>
-                <Grid item sx={12} md={7} className="container__right">
+                <Grid item xs={12} md={7} className="container__right">
                     <h1>Share your Photos with Friends Easily</h1>
                     <p>
                         Objectively deliver professional value with diverse

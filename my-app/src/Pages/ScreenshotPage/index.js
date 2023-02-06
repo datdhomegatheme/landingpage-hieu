@@ -6,12 +6,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-import { Grid } from "@mui/material";
-
 function ScreenshotPage() {
     return (
         <section className="screenshots-page">
-            <div container className="screenshots-page__container d-flex">
+            <div className="screenshots-page__container d-flex">
                 <h1>App Screenshots Looks Awesome</h1>
                 <h2 className={"text-gray"}>
                     Credibly synthesize multimedia based networks vis-a-vis

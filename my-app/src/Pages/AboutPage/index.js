@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 function AboutPage() {
     return (
         <div className="about d-flex">
-            <Grid xs={12} container className="about__container  d-flex">
+            <Grid item xs={12} container className="about__container  d-flex">
                 <Grid xs={12} md={7} item className="container__left">
                     <h1>Use Your Android or ios Device to Manage Everything</h1>
                     {aboutItems.map((item, indexAbout) => (

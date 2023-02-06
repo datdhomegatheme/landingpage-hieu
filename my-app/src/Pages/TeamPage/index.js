@@ -17,6 +17,7 @@ function TeamPage() {
                 </h2>
                 <Grid
                     xs={12}
+                    item
                     container
                     className="container__img-member d-flex "
                 >

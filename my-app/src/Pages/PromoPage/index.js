@@ -14,7 +14,7 @@ function PromoPage() {
                             interoperable imperatives rather.
                         </h2>
                     </div>
-                    <Grid sx={12} container className="promo__content d-flex">
+                    <Grid item container className="promo__content d-flex">
                         {promoItems.map((item) => (
                             <Grid
                                 md={3}

@@ -12,7 +12,7 @@ function NewsPage() {
                     emerging leadership. Distinctively <br /> transform tactical
                     methods of resource sucking core.
                 </h2>
-                <Grid xs={12} container>
+                <Grid item xs={12} container>
                     {dataNewPage.map((item, index) => (
                         <Grid
                             item

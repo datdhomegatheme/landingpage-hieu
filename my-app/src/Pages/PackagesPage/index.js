@@ -19,7 +19,12 @@ function PackagesPage() {
                             high-yield processes rather than user friendly.
                         </h2>
                     </Grid>
-                    <Grid container xs={12} className="package__content d-flex">
+                    <Grid
+                        container
+                        item
+                        xs={12}
+                        className="package__content d-flex"
+                    >
                         {packageItems.map((item, index) => (
                             <Grid
                                 className={"grid-container d-flex"}
@@ -98,7 +103,8 @@ function PackagesPage() {
 
                     <Grid
                         container
-                        sx={12}
+                        xs={12}
+                        item
                         className="container__package-card d-flex"
                     >
                         {dataPackages.map((item) => (
