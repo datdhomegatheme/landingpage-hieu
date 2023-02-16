@@ -1,0 +1,71 @@
+.trust-page {
+  position: relative;
+  padding: 100px 264px;
+  overflow: hidden;
+
+  .trust-page__container {
+    text-align: center;
+
+    .trust-page__container__content {
+      line-height: 2;
+      @include media-breakpoint-down(lg){
+        padding: 0 400px;
+      }
+      @include media-breakpoint-down(md){
+        padding: 0 500px;
+      }
+    }
+
+    .trust-page__container__carousel {
+      align-items: center;
+
+      .carousel {
+        padding: 26px 0;
+        width: 1440px;
+
+        .carousel__img {
+          height: auto;
+          width: 122px;
+          transform: scale(1);
+          transition: transform 0.5s ease-in;
+
+          &:hover {
+            transform: scale(1.2);
+            transition: transform 0.5s ease-in;
+          }
+        }
+      }
+    }
+
+    .trust-page__container__subscribe {
+      position: absolute;
+      width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding-top: 100px;
+
+      .subscribe__input {
+        width: 658px;
+        padding: 20px 15px;
+        border-radius: 30px;
+        border: 1px solid #ebebeb;
+        z-index: $z-index-button;
+        position: relative;
+
+        &:focus-visible {
+          border: 1px solid #6730e3;
+        }
+      }
+
+      .subscribe__btn {
+        position: absolute;
+        right: 14px;
+        width: 200px;
+        height: 46px;
+      }
+    }
+  }
+}

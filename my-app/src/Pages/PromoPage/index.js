@@ -1,9 +1,10 @@
-import { promoItems } from "../../DataItems";
+import { promoItems } from "../../component/DataItems";
+import { Grid } from "@mui/material";
 
 function PromoPage() {
     return (
         <>
-            <div className="promo">
+            <div className="promo d-flex">
                 <div className="promo__container d-flex">
                     <div className="promo__title">
                         <h1>Why Peoples Love AppCo?</h1>
@@ -13,19 +14,22 @@ function PromoPage() {
                             interoperable imperatives rather.
                         </h2>
                     </div>
-                    <div className="promo__content d-flex">
-                        {promoItems.map((item, indexPromo) => (
-                            <>
-                                <div key={indexPromo} className="content__bg">
-                                    <div className="bg-icon d-flex">
-                                        {item.icon}
-                                    </div>
-                                    <h2>{item.title}</h2>
-                                    <p className="text-gray">{item.content}</p>
+                    <Grid item container className="promo__content d-flex">
+                        {promoItems.map((item, index) => (
+                            <Grid
+                                md={3}
+                                item
+                                key={index}
+                                className="content__bg"
+                            >
+                                <div className="bg-icon d-flex">
+                                    {item.icon}
                                 </div>
-                            </>
+                                <h2>{item.title}</h2>
+                                <p className="text-gray">{item.content}</p>
+                            </Grid>
                         ))}
-                    </div>
+                    </Grid>
                 </div>
             </div>
         </>

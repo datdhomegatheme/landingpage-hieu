@@ -1,0 +1,130 @@
+.footer-top {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    img {
+        width: 100%;
+        position: absolute;
+        max-width: none;
+        height: auto;
+        top: -2px;
+    }
+}
+
+.footer {
+    position: relative;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: $bg-footer;
+    color: white;
+
+    li {
+        cursor: pointer;
+        line-height: 34px;
+        align-items: center;
+        display: flex;
+
+        svg {
+            width: 28px;
+
+        }
+
+        a {
+            color: white;
+            opacity: 0.7;
+
+            &:hover {
+
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .footer__container {
+        width: 72%;
+        flex-direction: row;
+
+        @include media-breakpoint-down(xxl) {
+            width: 95%;
+        }
+
+
+        .footer__container__custom {
+            margin: 0;
+
+            .grid__resources-company-location-wrapper {
+                justify-content: space-between;
+
+                @media (max-width: 727px) {
+                    a {
+
+                        overflow-wrap: anywhere;
+                    }
+                }
+            }
+
+            img {
+                margin-top: 20px;
+                width: 120px;
+                height: 34px;
+            }
+
+            p {
+                line-height: 30px;
+            }
+
+            .container__social {
+                display: flex;
+
+                a {
+                    color: white;
+                    cursor: pointer;
+
+                    svg {
+                        margin: 8px;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .footer-bottom {
+        width: 100%;
+        padding: 16px 0;
+        margin-top: 48px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        .footer-bottom__container {
+            width: 72%;
+
+            @include media-breakpoint-down(xxl) {
+                width: 95%;
+            }
+
+            .footer-bottom__container__custom-grid {
+                margin: 0;
+
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    li {
+
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

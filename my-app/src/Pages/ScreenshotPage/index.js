@@ -1,6 +1,9 @@
-import { dataScreenshots } from "../../DataItems";
+import { dataScreenshots } from "../../component/DataItems";
 import React from "react";
-import Carousel from "react-grid-carousel";
+
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function ScreenshotPage() {
     return (
@@ -16,24 +19,21 @@ function ScreenshotPage() {
                 <div className="screenshots-page__container__slider">
                     <div className="slider__frame"></div>
                     <div className="slider__items">
-                        <Carousel
-                            cols={3}
-                            autoplay={5000}
-                            hideArrow={true}
+                        <OwlCarousel
                             loop={true}
-                            showDots
+                            autoPlay={true}
+                            autoplaySpeed="1"
+                            items="3"
+                            mouseDrag
+                            center={true}
+                            className="owl-theme"
                         >
                             {dataScreenshots.map((item, index) => (
-                                <Carousel.Item>
-                                    <img
-                                        key={index}
-                                        src={item.img}
-                                        id={item.id}
-                                        alt="screenshots"
-                                    />
-                                </Carousel.Item>
+                                <div key={index}>
+                                    <img src={item.img} alt={item} />
+                                </div>
                             ))}
-                        </Carousel>
+                        </OwlCarousel>
                     </div>
                 </div>
             </div>

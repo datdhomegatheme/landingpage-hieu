@@ -1,12 +1,13 @@
-import { dataMembers } from "../../DataItems";
+import { dataMembers } from "../../component/DataItems";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import RedditIcon from "@mui/icons-material/Reddit";
+import { Grid } from "@mui/material";
 
 function TeamPage() {
     return (
-        <section className="team-page">
+        <section className="team-page d-flex">
             <div className="team-page__container d-flex">
                 <h1>Our Team Members</h1>
                 <h2 className="text-gray">
@@ -14,9 +15,20 @@ function TeamPage() {
                     lead pages, foster market positioning products without demos
                     and checkouts.
                 </h2>
-                <div className="container__img-member d-flex ">
+                <Grid
+                    xs={12}
+                    item
+                    container
+                    className="container__img-member d-flex "
+                >
                     {dataMembers.map((item, index) => (
-                        <div className="img-bg" key={index}>
+                        <Grid
+                            sm={6}
+                            xl={3}
+                            item
+                            className="img-bg d-flex"
+                            key={index}
+                        >
                             <img src={item.avatar} alt="avatar member" />
                             <div className="member-detail d-flex">
                                 <h1>{item.name}</h1>
@@ -28,9 +40,9 @@ function TeamPage() {
                                     <SportsBasketballIcon />
                                 </div>
                             </div>
-                        </div>
+                        </Grid>
                     ))}
-                </div>
+                </Grid>
             </div>
         </section>
     );

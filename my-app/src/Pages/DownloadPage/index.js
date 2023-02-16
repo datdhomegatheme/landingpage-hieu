@@ -6,16 +6,9 @@ import AppleIcon from "@mui/icons-material/Apple";
 function DownloadPage() {
     return (
         <div className="download-page d-flex">
-            <div className="download-page__container">
+            <div className="download-page__container d-flex">
                 <Grid className="container__custom" container>
-                    <Grid
-                        className="d-flex"
-                        xs={12}
-                        sm={7}
-                        md={7}
-                        lg={7}
-                        xl={7}
-                    >
+                    <Grid item className="d-flex" xs={12} md={7}>
                         <div className="download-page__content">
                             <h1>
                                 Start Managing your Apps Business, more Faster
@@ -39,15 +32,7 @@ function DownloadPage() {
                             </div>
                         </div>
                     </Grid>
-                    <Grid
-                        className="d-flex"
-                        item
-                        xs={12}
-                        sm={5}
-                        md={5}
-                        lg={5}
-                        xl={5}
-                    >
+                    <Grid item className="grid__app-img d-flex" xs={12} md={5}>
                         <div>
                             <img
                                 alt="app hand top"

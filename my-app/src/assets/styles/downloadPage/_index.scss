@@ -1,0 +1,110 @@
+.download-page {
+    position: relative;
+    background: $bg-home;
+    width: 100%;
+    height: 100%;
+    z-index: $z-index-default;
+    color: white;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: $navbar-bg-color;
+        z-index: $z-index-bg-img;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+    }
+
+    .download-page__container {
+        width: 72%;
+        justify-content: center;
+        align-items: center;
+
+        @include media-breakpoint-down(xxl) {
+            width: 95%;
+        }
+
+        .container__custom {
+            margin: 0;
+
+            .download-page__content {
+                padding-right: 100px;
+                line-height: 40px;
+
+                .content__btn {
+                    margin-top: 10px;
+
+                    a {
+                        padding: 12px 30px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-weight: 700;
+
+                    }
+
+                    .google-play {
+                        background: #ffffff;
+                        border-color: #ffffff;
+                        color: #6730e3;
+
+                        margin-right: 20px;
+
+
+
+                        &:hover {
+                            background: transparent;
+                            color: #fff;
+                        }
+                    }
+
+
+                    .app-store {
+                        background: transparent;
+
+                        color: #ffffff;
+                        border-color: #ffffff;
+
+                        &:hover {
+                            background: #fff;
+                            color: #6730e3;
+                        }
+
+
+                    }
+
+                    .app-store,
+                    .google-play {
+                        svg {
+                            position: relative;
+                            top: 4px;
+                            right: 4px;
+                            border-radius: 30px;
+                        }
+
+                    }
+                }
+
+
+            }
+        }
+
+
+
+        .grid__app-img {
+            align-items: flex-end;
+
+            .img-app-hand-top {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                padding-top: 30%;
+            }
+        }
+
+
+
+    }
+
+
+
+}

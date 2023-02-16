@@ -1,0 +1,49 @@
+.share-page {
+    background-color: white;
+    width: 100%;
+
+    .share-page__container {
+        flex-basis: 72%;
+        padding: 100px 0;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(xxl) {
+            flex-basis: 95%;
+        }
+
+        @media (max-width: 1055px) {
+            justify-content: center;
+
+        }
+
+        .container__left {
+
+            img {
+                width: 418px;
+                height: auto;
+
+            }
+
+        }
+
+        .container__right {
+            padding-left: 2%;
+
+            line-height: 40px;
+
+            .right__icon {
+                display: flex;
+                flex-direction: row;
+
+                .about-icon {
+                    border: 1px solid #dee2e6;
+                    margin-right: 32px;
+                }
+            }
+
+        }
+
+
+    }
+
+}
